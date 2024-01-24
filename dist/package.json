@@ -1,0 +1,12 @@
+{
+  "name": "talentics-asset",
+  "version": "1.0.1",
+  "description": "talentics assets library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Muhammad Hafidz Hubbusysyuhada",
+  "license": "ISC",
+  "types": "./index.d.ts"
+}

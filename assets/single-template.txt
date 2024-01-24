@@ -1,0 +1,46 @@
+class {{!! CLASSNAME !!}} extends HTMLElement {
+  id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+  props = ['height', 'width', 'color']
+  contentStyle = '';
+  colorStyle = '';
+  height = ''
+  width = ''
+  color = ''
+  constructor() {
+    super()
+    this._initElement()
+    const shadowRoot = this.attachShadow({mode: 'closed'});
+    shadowRoot.innerHTML = `{{!! CONTENT !!}}`
+  }
+
+  attributeChangedCallback(name: string, _: string, newValue: string) {
+    this._setState();
+  }
+
+  connectedCallback() {
+    this._setState();
+  }
+  
+  disconnectedCallback() {
+    this._setState();
+  }
+
+  _initElement() {
+    this._setState()
+    if (!this.width && !this.height) {
+      this.width = '24'
+      this.height = '24'
+    }
+    let contentStyle = 'object-fit: content;'
+    if (this.width) contentStyle += `width: ${this.width}px;`
+    if (this.height) contentStyle += `height: ${this.height}px;`
+    this.contentStyle = contentStyle
+    if (this.color) this.colorStyle = `fill: ${this.color}`
+  }
+
+  _setState() {
+    // @ts-ignore
+    this.props.forEach(key => this[key as keyof typeof {{!! CLASSNAME !!}}] = this.getAttribute(key));
+  }
+}
+export default {{!! CLASSNAME !!}}
