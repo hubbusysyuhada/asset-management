@@ -1,0 +1,28 @@
+<template>
+  <div v-html="template"></div>
+</template>
+
+<script>
+export default {
+  name: '{{!! CLASSNAME !!}}',
+  props: {
+    size: {
+      Type: Number,
+    },
+    color: {}
+  },
+  computed: {
+    template() {
+      return `{{!! CONTENT !!}}`
+    },
+    contentStyle() {
+      const size = this.size || 24
+      return `width: ${size}px; height: ${size}px`
+    },
+    colorStyle() {
+      if (this.color) return `fill: ${this.color}`
+      return ""
+    }
+  },
+}
+</script>

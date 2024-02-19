@@ -1,6 +1,6 @@
 import { readdirSync, readFileSync, writeFileSync, unlinkSync } from 'fs'
-import _ from 'lodash'
 import path from 'path'
+import _ from 'lodash'
 
 type AssetType = { class: string; tag: string; html: string }
 type AssetCollectionType = { icons: AssetType[]; illustrations: AssetType[] }
@@ -8,6 +8,7 @@ type ChangeLogType = AssetCollectionType & { version: string }
 
 const dirPath = path.join(process.cwd(), 'assets')
 const template = readFileSync(`${dirPath}/single-template.txt`, { encoding: "utf-8" })
+const vueTemplate = readFileSync(`${dirPath}/vue-template.txt`, { encoding: "utf-8" })
 
 
 const parseFileContent = (arg: Record<string, string>, template: string) => {
@@ -34,10 +35,13 @@ const generateComponents = (type: 'icons' | 'illustrations') => {
     const CLASSNAME = _.startCase(_.toLower(filename)).replace(new RegExp(' ', 'g'), '');
     const COMPONENT_NAME = _.kebabCase(filename)
     const html = readFileSync(`${dirPath}/${type}/${f}`, { encoding: "utf-8" })
-    let CONTENT = parseColor(parseSize(html))
+    let CONTENT = parseSize(html)
+    if (type === 'icons') CONTENT = parseColor(CONTENT)
 
     const file = parseFileContent({ CLASSNAME, COMPONENT_NAME, CONTENT }, template)
+    const vueFile = parseFileContent({ CLASSNAME, COMPONENT_NAME, CONTENT }, vueTemplate)
     writeFileSync(path.join(process.cwd(), type, `${CLASSNAME}.ts`), file)
+    writeFileSync(path.join(process.cwd(), 'Vue', type, `${CLASSNAME}.vue`), vueFile)
 
     updateIndex(type, COMPONENT_NAME, CLASSNAME)
     metadata.push({ class: CLASSNAME, tag: `talentics-${type}-${COMPONENT_NAME}`, html })
@@ -52,7 +56,7 @@ const parseSize = (content: string) => {
 
 const parseColor = (content: string) => {
   ['path', 'ellipse'].forEach(v => {
-    const regex = new RegExp(`<${v} `, 'g')
+    const regex = new RegExp(`<${v}`, 'g')
     content = content.replace(regex, `<${v} ` + 'style="${this.colorStyle}" ')
   })
   return content
@@ -71,28 +75,25 @@ const deleteDir = (directory: string) => {
 }
 
 const deleteAll = () => {
+  writeFileSync(path.join(process.cwd(), `index.ts`), '')
   deleteDir('icons')
   deleteDir('illustrations')
+  deleteDir('Vue/icons')
+  deleteDir('Vue/illustrations')
 }
 
-const upgradePackageVersion = (metadata: AssetCollectionType) => {
-  const packagePath = path.join(process.cwd(), `dist`, 'package.json')
-  const json = JSON.parse(readFileSync(packagePath, { encoding: "utf-8" }))
-  const version = json.version.split('.')
-  version[2]++
-  json.version = version.join('.')
-  const isChange = updateChangelog(json.version, metadata)
-  if (isChange) {
-    const stringified = JSON.stringify(json, null, 2)
-    writeFileSync(packagePath, stringified, { encoding: "utf-8" })
-  }
+const exportChangelog = (metadata: AssetCollectionType) => {
+  updateChangelog(metadata)
   const indexPath = path.join(process.cwd(), `index.ts`)
   const content = readFileSync(indexPath, { encoding: "utf-8" }) + "\n\nexport { default as metadata } from './dist/changelog.json'"
   writeFileSync(indexPath, content, { encoding: "utf-8" })
 }
 
-const updateChangelog = (version: string, metadata: AssetCollectionType) => {
+const updateChangelog = (metadata: AssetCollectionType) => {
   const { icons, illustrations } = metadata
+  const jsonPath = path.join(process.cwd(), `dist`, 'package.json')
+  const json = JSON.parse(readFileSync(jsonPath, { encoding: "utf-8" }))
+  const version = json.version
   const changelogPath = path.join(process.cwd(), `dist`, 'changelog.json')
   const changelog: ChangeLogType[] = JSON.parse(readFileSync(changelogPath, { encoding: "utf-8" }))
   let isChange = true
@@ -104,14 +105,13 @@ const updateChangelog = (version: string, metadata: AssetCollectionType) => {
     changelog.push({ version, icons, illustrations })
     writeFileSync(changelogPath, JSON.stringify(changelog, null, 2), { encoding: "utf-8" })
   }
-  return isChange
+  else throw 'No changes applied, please make changes before build and publish package'
 }
 
 const init = () => {
-  writeFileSync(path.join(process.cwd(), `index.ts`), '')
   deleteAll()
   const metadata = generateAllComponents()
-  upgradePackageVersion(metadata)
+  exportChangelog(metadata)
 }
 
 init()

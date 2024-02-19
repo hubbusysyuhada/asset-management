@@ -1,10 +1,9 @@
 class {{!! CLASSNAME !!}} extends HTMLElement {
   id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
-  props = ['height', 'width', 'color']
+  props = ['size', 'color']
   contentStyle = '';
   colorStyle = '';
-  height = ''
-  width = ''
+  size = ''
   color = ''
   constructor() {
     super()
@@ -27,13 +26,8 @@ class {{!! CLASSNAME !!}} extends HTMLElement {
 
   _initElement() {
     this._setState()
-    if (!this.width && !this.height) {
-      this.width = '24'
-      this.height = '24'
-    }
-    let contentStyle = 'object-fit: content;'
-    if (this.width) contentStyle += `width: ${this.width}px;`
-    if (this.height) contentStyle += `height: ${this.height}px;`
+    const size = this.size || 24
+    let contentStyle = `object-fit: content; width: ${size}px; height: ${size}px`
     this.contentStyle = contentStyle
     if (this.color) this.colorStyle = `fill: ${this.color}`
   }

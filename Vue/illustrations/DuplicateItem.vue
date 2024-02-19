@@ -1,15 +1,19 @@
-class DuplicateItem extends HTMLElement {
-  id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
-  props = ['size', 'color']
-  contentStyle = '';
-  colorStyle = '';
-  size = ''
-  color = ''
-  constructor() {
-    super()
-    this._initElement()
-    const shadowRoot = this.attachShadow({mode: 'closed'});
-    shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="240" height="180" viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+<template>
+  <div v-html="template"></div>
+</template>
+
+<script>
+export default {
+  name: 'DuplicateItem',
+  props: {
+    size: {
+      Type: Number,
+    },
+    color: {}
+  },
+  computed: {
+    template() {
+      return `<svg style="${this.contentStyle}" width="240" height="180" viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_1938_21688)">
 <path d="M26.5099 69.8318L27.0699 67.8918C31.8199 51.5718 44.9599 38.9818 61.4699 35.6518C63.5899 35.2218 65.7499 34.9518 67.9099 34.8418C83.5199 34.0418 99.3599 41.7618 108.52 54.6318C113.91 62.2018 117.38 71.6518 125.11 76.7318C135.17 83.3419 148.38 80.1018 159.82 76.6418C171.27 73.1918 184.49 69.9718 194.52 76.6318C200.8 80.8018 209.79 87.7118 212.22 103.762C215.22 123.612 204.41 139.152 189.56 152.362C174.71 165.572 151.6 168.752 131.8 170.002C104.07 171.752 75.1399 163.892 54.0699 145.432C33.0099 126.962 20.9899 97.3318 26.5099 69.8318Z" fill="#CFD3FF"/>
 <path d="M50.4199 102.641C50.6199 103.711 49.9099 104.731 48.8399 104.931C47.7699 105.131 46.7498 104.421 46.5498 103.351C46.3498 102.281 47.0598 101.261 48.1298 101.061C49.1998 100.861 50.2299 101.571 50.4199 102.641Z" fill="#3D00C3"/>
@@ -90,31 +94,15 @@ class DuplicateItem extends HTMLElement {
 </defs>
 </svg>
 `
-  }
-
-  attributeChangedCallback(name: string, _: string, newValue: string) {
-    this._setState();
-  }
-
-  connectedCallback() {
-    this._setState();
-  }
-  
-  disconnectedCallback() {
-    this._setState();
-  }
-
-  _initElement() {
-    this._setState()
-    const size = this.size || 24
-    let contentStyle = `object-fit: content; width: ${size}px; height: ${size}px`
-    this.contentStyle = contentStyle
-    if (this.color) this.colorStyle = `fill: ${this.color}`
-  }
-
-  _setState() {
-    // @ts-ignore
-    this.props.forEach(key => this[key as keyof typeof DuplicateItem] = this.getAttribute(key));
-  }
+    },
+    contentStyle() {
+      const size = this.size || 24
+      return `width: ${size}px; height: ${size}px`
+    },
+    colorStyle() {
+      if (this.color) return `fill: ${this.color}`
+      return ""
+    }
+  },
 }
-export default DuplicateItem
+</script>

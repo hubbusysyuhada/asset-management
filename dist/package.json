@@ -1,6 +1,6 @@
 {
-  "name": "talentics-asset",
-  "version": "1.0.1",
+  "name": "talentics-assets",
+  "version": "1.0.13",
   "description": "talentics assets library",
   "main": "index.js",
   "scripts": {

@@ -1,15 +1,19 @@
-class Whatsapp extends HTMLElement {
-  id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
-  props = ['size', 'color']
-  contentStyle = '';
-  colorStyle = '';
-  size = ''
-  color = ''
-  constructor() {
-    super()
-    this._initElement()
-    const shadowRoot = this.attachShadow({mode: 'closed'});
-    shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<template>
+  <div v-html="template"></div>
+</template>
+
+<script>
+export default {
+  name: 'Whatsapp',
+  props: {
+    size: {
+      Type: Number,
+    },
+    color: {}
+  },
+  computed: {
+    template() {
+      return `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_443_3349)">
 <path style="${this.colorStyle}"  d="M1.44043 22.5604L2.89697 17.2804C1.95028 15.642 1.44043 13.8212 1.44043 11.9274C1.44043 6.17428 6.17428 1.44043 11.9641 1.44043C17.754 1.44043 22.5604 6.17428 22.5604 11.9274C22.5604 17.6806 17.754 22.5604 11.9641 22.5604C10.1434 22.5604 8.39559 21.978 6.82974 21.1039L1.44043 22.5604Z" fill="white"/>
 <path style="${this.colorStyle}"  d="M7.12051 19.2105L7.44844 19.3924C8.79567 20.2298 10.3615 20.7396 12 20.7396C16.7701 20.7396 20.7392 16.7705 20.7392 11.9274C20.7392 7.0842 16.7701 3.26074 11.9637 3.26074C7.15722 3.26074 3.26074 7.12092 3.26074 11.9274C3.26074 13.6025 3.73429 15.241 4.60797 16.6249L4.82659 16.9529L3.98922 20.0115L7.12051 19.2105Z" fill="#49C190"/>
@@ -22,31 +26,15 @@ class Whatsapp extends HTMLElement {
 </defs>
 </svg>
 `
-  }
-
-  attributeChangedCallback(name: string, _: string, newValue: string) {
-    this._setState();
-  }
-
-  connectedCallback() {
-    this._setState();
-  }
-  
-  disconnectedCallback() {
-    this._setState();
-  }
-
-  _initElement() {
-    this._setState()
-    const size = this.size || 24
-    let contentStyle = `object-fit: content; width: ${size}px; height: ${size}px`
-    this.contentStyle = contentStyle
-    if (this.color) this.colorStyle = `fill: ${this.color}`
-  }
-
-  _setState() {
-    // @ts-ignore
-    this.props.forEach(key => this[key as keyof typeof Whatsapp] = this.getAttribute(key));
-  }
+    },
+    contentStyle() {
+      const size = this.size || 24
+      return `width: ${size}px; height: ${size}px`
+    },
+    colorStyle() {
+      if (this.color) return `fill: ${this.color}`
+      return ""
+    }
+  },
 }
-export default Whatsapp
+</script>

@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "ts-node generator.ts && npx tsup",
-    "publish": "cd ./dist && npm publish && cd ..",
+    "build": "ts-node generator.ts && npx tsup && rm -rf ./dist/icons && rm -rf ./dist/illustrations && cp -r ./Vue/* ./dist/",
+    "publish": "cd ./dist && npm publish --access public && cd .. && ts-node updateVersion.ts",
     "build-and-publish": "npm run build && npm run publish"
   },
   "keywords": [],
