@@ -32,7 +32,7 @@ class ComputerEdit extends HTMLElement {
   _initElement() {
     this._setState()
     const size = this.size || 24
-    let contentStyle = `object-fit: content; width: ${size}px; height: ${size}px`
+    let contentStyle = `object-fit: content; width: ${size}; height: ${size}`
     this.contentStyle = contentStyle
     if (this.color) this.colorStyle = `fill: ${this.color}`
   }

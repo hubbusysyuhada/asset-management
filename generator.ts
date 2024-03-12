@@ -84,9 +84,9 @@ const deleteAll = () => {
 
 const exportChangelog = (metadata: AssetCollectionType) => {
   updateChangelog(metadata)
-  const indexPath = path.join(process.cwd(), `index.ts`)
-  const content = readFileSync(indexPath, { encoding: "utf-8" }) + "\n\nexport { default as metadata } from './dist/changelog.json'"
-  writeFileSync(indexPath, content, { encoding: "utf-8" })
+  // const indexPath = path.join(process.cwd(), `index.ts`)
+  // const content = readFileSync(indexPath, { encoding: "utf-8" }) + "\n\nexport { default as metadata } from './dist/changelog.json'"
+  // writeFileSync(indexPath, content, { encoding: "utf-8" })
 }
 
 const updateChangelog = (metadata: AssetCollectionType) => {
