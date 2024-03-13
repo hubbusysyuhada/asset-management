@@ -1032,58 +1032,6 @@ var init_Close = __esm({
   }
 });
 
-// icons/ComputerEdit.ts
-var ComputerEdit_exports = {};
-__export(ComputerEdit_exports, {
-  default: () => ComputerEdit_default
-});
-var ComputerEdit, ComputerEdit_default;
-var init_ComputerEdit = __esm({
-  "icons/ComputerEdit.ts"() {
-    "use strict";
-    ComputerEdit = class extends HTMLElement {
-      constructor() {
-        super();
-        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
-        this.props = ["size", "color"];
-        this.contentStyle = "";
-        this.colorStyle = "";
-        this.size = "";
-        this.color = "";
-        this._initElement();
-        const shadowRoot = this.attachShadow({ mode: "closed" });
-        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="121" height="121" viewBox="0 0 121 121" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path style="${this.colorStyle}"  d="M105.876 50.4141C103.103 50.4141 100.834 52.6828 100.834 55.4557V71.337C100.834 79.2524 94.3806 85.7057 86.4652 85.7057H34.5361C26.6206 85.7057 20.1673 79.2524 20.1673 71.337V44.6161C20.1673 36.7007 26.6206 30.2474 34.5361 30.2474H55.459C58.2319 30.2474 60.5006 27.9786 60.5006 25.2057C60.5006 22.4328 58.2319 20.1641 55.459 20.1641H34.5361C21.0748 20.1641 10.084 31.1549 10.084 44.6161V71.2866C10.084 84.7982 21.0748 95.7891 34.5361 95.7891H55.459V100.831H35.2923C32.5194 100.831 30.2507 103.099 30.2507 105.872C30.2507 108.645 32.5194 110.914 35.2923 110.914H85.709C88.4819 110.914 90.7506 108.645 90.7506 105.872C90.7506 103.099 88.4819 100.831 85.709 100.831H65.5423V95.7891H86.4652C99.9769 95.7891 110.917 84.7982 110.917 71.337V55.4557C110.917 52.6828 108.649 50.4141 105.876 50.4141Z" fill="#3D00C3"/>
-<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M99.1701 12.9558C95.3384 9.12411 89.0868 9.12411 85.2047 12.9558L63.828 34.3324L60.5509 54.1966C59.9459 57.877 63.1222 61.0533 66.8026 60.4483L86.6164 57.1208L107.993 35.7441C111.825 31.9124 111.825 25.6608 107.993 21.7787L99.1701 12.9558ZM71.3401 49.6591L73.1047 39.0716L92.2126 19.9637L101.036 28.7866L81.8772 47.9449L71.3401 49.6591Z" fill="#3D00C3"/>
-<ellipse style="${this.colorStyle}"  cx="30.2507" cy="40.3346" rx="5.04167" ry="5.04167" fill="#3D00C3"/>
-</svg>
-`;
-      }
-      attributeChangedCallback(name, _, newValue) {
-        this._setState();
-      }
-      connectedCallback() {
-        this._setState();
-      }
-      disconnectedCallback() {
-        this._setState();
-      }
-      _initElement() {
-        this._setState();
-        const size = this.size || 24;
-        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
-        this.contentStyle = contentStyle;
-        if (this.color)
-          this.colorStyle = `fill: ${this.color}`;
-      }
-      _setState() {
-        this.props.forEach((key) => this[key] = this.getAttribute(key));
-      }
-    };
-    ComputerEdit_default = ComputerEdit;
-  }
-});
-
 // icons/Computer.ts
 var Computer_exports = {};
 __export(Computer_exports, {
@@ -1154,9 +1102,9 @@ var init_Copy = __esm({
         this.color = "";
         this._initElement();
         const shadowRoot = this.attachShadow({ mode: "closed" });
-        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M5.06673 6.49771C5.06673 5.56813 5.8337 4.81698 6.7734 4.81698H10.5467C10.5623 4.81698 10.5778 4.81771 10.5934 4.81916V6.64215C10.5934 7.28556 11.1268 7.81079 11.7801 7.81079H13.3334V11.6712C13.3334 12.5966 12.5707 13.352 11.6267 13.352H6.7734C5.8337 13.352 5.06673 12.6008 5.06673 11.6712V6.49771ZM6.7734 3.50391C5.09976 3.50391 3.7334 4.84054 3.7334 6.49771V11.6712C3.7334 13.3284 5.09976 14.665 6.7734 14.665H11.6267C13.3095 14.665 14.6667 13.3194 14.6667 11.6712V7.5613C14.6667 7.07423 14.4669 6.61685 14.1318 6.2768L14.1283 6.27329L11.8546 4.03414L11.851 4.03072C11.5058 3.70068 11.0413 3.50391 10.5467 3.50391H6.7734Z" fill="#3D00C3"/>
-<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M4.3735 2.6451C3.42835 2.6451 2.66683 3.39506 2.66683 4.32584V9.10542C2.66683 10.0362 3.42835 10.7862 4.3735 10.7862V12.0992C2.69197 12.0992 1.3335 10.7614 1.3335 9.10542V4.32584C1.3335 2.66987 2.69197 1.33203 4.3735 1.33203H9.6335C11.3096 1.33203 12.6668 2.67107 12.6668 4.32584V5.8884H11.3335V4.32584C11.3335 3.39385 10.5708 2.6451 9.6335 2.6451H4.3735Z" fill="#3D00C3"/>
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M7.59961 9.7495C7.59961 8.35513 8.75006 7.2284 10.1596 7.2284H15.8196C15.8429 7.2284 15.8663 7.22949 15.8896 7.23167V9.96616C15.8896 10.9313 16.6896 11.7191 17.6696 11.7191H19.9996V17.5098C19.9996 18.8979 18.8555 20.0309 17.4396 20.0309H10.1596C8.75006 20.0309 7.59961 18.9041 7.59961 17.5098V9.7495ZM10.1596 5.25879C7.64915 5.25879 5.59961 7.26374 5.59961 9.7495V17.5098C5.59961 19.9955 7.64915 22.0005 10.1596 22.0005H17.4396C19.9637 22.0005 21.9996 19.9821 21.9996 17.5098V11.3449C21.9996 10.6143 21.6999 9.92821 21.1972 9.41814L21.192 9.41286L17.7814 6.05413L17.7761 6.04902C17.2581 5.55395 16.5615 5.25879 15.8196 5.25879H10.1596Z" fill="#414042"/>
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M6.56 3.96961C5.14228 3.96961 4 5.09454 4 6.49071V13.6601C4 15.0563 5.14228 16.1812 6.56 16.1812V18.1508C4.03772 18.1508 2 16.144 2 13.6601V6.49071C2 4.00675 4.03772 2 6.56 2H14.45C16.9641 2 19 4.00856 19 6.49071V8.83455H17V6.49071C17 5.09273 15.8559 3.96961 14.45 3.96961H6.56Z" fill="#414042"/>
 </svg>
 `;
       }
@@ -1437,6 +1385,58 @@ var init_DoubleChevronUp = __esm({
       }
     };
     DoubleChevronUp_default = DoubleChevronUp;
+  }
+});
+
+// icons/EditPage.ts
+var EditPage_exports = {};
+__export(EditPage_exports, {
+  default: () => EditPage_default
+});
+var EditPage, EditPage_default;
+var init_EditPage = __esm({
+  "icons/EditPage.ts"() {
+    "use strict";
+    EditPage = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  d="M21 10C20.45 10 20 10.45 20 11V14.15C20 15.72 18.72 17 17.15 17H6.85C5.28 17 4 15.72 4 14.15V8.85C4 7.28 5.28 6 6.85 6H11C11.55 6 12 5.55 12 5C12 4.45 11.55 4 11 4H6.85C4.18 4 2 6.18 2 8.85V14.14C2 16.82 4.18 19 6.85 19H11V20H7C6.45 20 6 20.45 6 21C6 21.55 6.45 22 7 22H17C17.55 22 18 21.55 18 21C18 20.45 17.55 20 17 20H13V19H17.15C19.83 19 22 16.82 22 14.15V11C22 10.45 21.55 10 21 10Z" fill="#414042"/>
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M19.6699 2.57C18.9099 1.81 17.6699 1.81 16.8999 2.57L12.6599 6.81L12.0099 10.75C11.8899 11.48 12.5199 12.11 13.2499 11.99L17.1799 11.33L21.4199 7.09C22.1799 6.33 22.1799 5.09 21.4199 4.32L19.6699 2.57ZM14.1499 9.85L14.4999 7.75L18.2899 3.96L20.0399 5.71L16.2399 9.51L14.1499 9.85Z" fill="#414042"/>
+<circle cx="6" cy="8" r="1" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    EditPage_default = EditPage;
   }
 });
 
@@ -2041,6 +2041,59 @@ var init_InfoSquare = __esm({
       }
     };
     InfoSquare_default = InfoSquare;
+  }
+});
+
+// icons/Log.ts
+var Log_exports = {};
+__export(Log_exports, {
+  default: () => Log_default
+});
+var Log, Log_default;
+var init_Log = __esm({
+  "icons/Log.ts"() {
+    "use strict";
+    Log = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  d="M16.5 5.02H7.5V3.23C7.5 2.55 8.05 2 8.73 2H15.27C15.95 2 16.5 2.55 16.5 3.23V5.02Z" fill="#414042"/>
+<path style="${this.colorStyle}"  d="M17.5 3.06006V5.07006C18.91 5.31006 20 6.52006 20 8.00006V17.0001C20 18.6501 18.65 20.0001 17 20.0001H7C5.35 20.0001 4 18.6501 4 17.0001V8.00006C4 6.52006 5.09 5.31006 6.5 5.07006V3.06006C3.98 3.32006 2 5.42006 2 8.00006V17.0001C2 19.7601 4.24 22.0001 7 22.0001H17C19.76 22.0001 22 19.7601 22 17.0001V8.00006C22 5.42006 20.02 3.32006 17.5 3.06006Z" fill="#414042"/>
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M6 10.5C6 9.94772 6.44772 9.5 7 9.5H17C17.5523 9.5 18 9.94772 18 10.5C18 11.0523 17.5523 11.5 17 11.5H7C6.44772 11.5 6 11.0523 6 10.5Z" fill="#414042"/>
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M6 15C6 14.4477 6.44772 14 7 14H17C17.5523 14 18 14.4477 18 15C18 15.5523 17.5523 16 17 16H7C6.44772 16 6 15.5523 6 15Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    Log_default = Log;
   }
 });
 
@@ -4103,7 +4156,6 @@ window.customElements.define("talentics-icons-chevron-right", (init_ChevronRight
 window.customElements.define("talentics-icons-chevron-up", (init_ChevronUp(), __toCommonJS(ChevronUp_exports)).default);
 window.customElements.define("talentics-icons-chevron-up-down", (init_ChevronUpDown(), __toCommonJS(ChevronUpDown_exports)).default);
 window.customElements.define("talentics-icons-close", (init_Close(), __toCommonJS(Close_exports)).default);
-window.customElements.define("talentics-icons-computer-edit", (init_ComputerEdit(), __toCommonJS(ComputerEdit_exports)).default);
 window.customElements.define("talentics-icons-computer", (init_Computer(), __toCommonJS(Computer_exports)).default);
 window.customElements.define("talentics-icons-copy", (init_Copy(), __toCommonJS(Copy_exports)).default);
 window.customElements.define("talentics-icons-detail", (init_Detail(), __toCommonJS(Detail_exports)).default);
@@ -4111,6 +4163,7 @@ window.customElements.define("talentics-icons-double-chevron-down", (init_Double
 window.customElements.define("talentics-icons-double-chevron-left", (init_DoubleChevronLeft(), __toCommonJS(DoubleChevronLeft_exports)).default);
 window.customElements.define("talentics-icons-double-chevron-right", (init_DoubleChevronRight(), __toCommonJS(DoubleChevronRight_exports)).default);
 window.customElements.define("talentics-icons-double-chevron-up", (init_DoubleChevronUp(), __toCommonJS(DoubleChevronUp_exports)).default);
+window.customElements.define("talentics-icons-edit-page", (init_EditPage(), __toCommonJS(EditPage_exports)).default);
 window.customElements.define("talentics-icons-envelope", (init_Envelope(), __toCommonJS(Envelope_exports)).default);
 window.customElements.define("talentics-icons-envelope-open", (init_EnvelopeOpen(), __toCommonJS(EnvelopeOpen_exports)).default);
 window.customElements.define("talentics-icons-error", (init_Error(), __toCommonJS(Error_exports)).default);
@@ -4123,6 +4176,7 @@ window.customElements.define("talentics-icons-github", (init_Github(), __toCommo
 window.customElements.define("talentics-icons-graph", (init_Graph(), __toCommonJS(Graph_exports)).default);
 window.customElements.define("talentics-icons-info", (init_Info(), __toCommonJS(Info_exports)).default);
 window.customElements.define("talentics-icons-info-square", (init_InfoSquare(), __toCommonJS(InfoSquare_exports)).default);
+window.customElements.define("talentics-icons-log", (init_Log(), __toCommonJS(Log_exports)).default);
 window.customElements.define("talentics-icons-minus", (init_Minus(), __toCommonJS(Minus_exports)).default);
 window.customElements.define("talentics-icons-mobile", (init_Mobile(), __toCommonJS(Mobile_exports)).default);
 window.customElements.define("talentics-icons-multiple-files", (init_MultipleFiles(), __toCommonJS(MultipleFiles_exports)).default);
