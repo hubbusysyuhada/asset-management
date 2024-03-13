@@ -1,0 +1,31 @@
+<template>
+  <div v-html="template"></div>
+</template>
+
+<script>
+export default {
+  name: 'ChevronLeft',
+  props: {
+    size: {
+      Type: Number,
+    },
+    color: {}
+  },
+  computed: {
+    template() {
+      return `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M16.5981 5.34923C16.9575 5.76855 16.909 6.39985 16.4896 6.75927L10.3754 12L16.4896 17.2408C16.909 17.6002 16.9575 18.2315 16.5981 18.6508C16.2387 19.0701 15.6074 19.1187 15.1881 18.7593L8.4538 12.9871C7.8485 12.4682 7.8485 11.5318 8.4538 11.013L15.1881 5.24076C15.6074 4.88134 16.2387 4.9299 16.5981 5.34923Z" fill="#414042"/>
+</svg>
+`
+    },
+    contentStyle() {
+      const size = this.size || 24
+      return `width: ${size}px; height: ${size}px`
+    },
+    colorStyle() {
+      if (this.color) return `fill: ${this.color}`
+      return ""
+    }
+  },
+}
+</script>

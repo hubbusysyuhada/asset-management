@@ -82,13 +82,6 @@ const deleteAll = () => {
   deleteDir('Vue/illustrations')
 }
 
-const exportChangelog = (metadata: AssetCollectionType) => {
-  updateChangelog(metadata)
-  // const indexPath = path.join(process.cwd(), `index.ts`)
-  // const content = readFileSync(indexPath, { encoding: "utf-8" }) + "\n\nexport { default as metadata } from './dist/changelog.json'"
-  // writeFileSync(indexPath, content, { encoding: "utf-8" })
-}
-
 const updateChangelog = (metadata: AssetCollectionType) => {
   const { icons, illustrations } = metadata
   const jsonPath = path.join(process.cwd(), `dist`, 'package.json')
@@ -111,7 +104,7 @@ const updateChangelog = (metadata: AssetCollectionType) => {
 const init = () => {
   deleteAll()
   const metadata = generateAllComponents()
-  exportChangelog(metadata)
+  updateChangelog(metadata)
 }
 
 init()

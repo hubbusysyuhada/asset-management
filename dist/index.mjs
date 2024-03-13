@@ -19,6 +19,1019 @@ var __copyProps = (to, from, except, desc) => {
 };
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
+// icons/Add.ts
+var Add_exports = {};
+__export(Add_exports, {
+  default: () => Add_default
+});
+var Add, Add_default;
+var init_Add = __esm({
+  "icons/Add.ts"() {
+    "use strict";
+    Add = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M10.9991 17.999C10.9991 18.5513 11.4468 18.999 11.9991 18.999C12.5514 18.999 12.9991 18.5513 12.9991 17.999V12.998H17.999C18.5513 12.998 18.999 12.5502 18.999 11.998C18.999 11.4457 18.5513 10.998 17.999 10.998H12.9991V6C12.9991 5.44771 12.5514 5 11.9991 5C11.4468 5 10.9991 5.44771 10.9991 6V10.998H6C5.44772 10.998 5 11.4457 5 11.998C5 12.5502 5.44772 12.998 6 12.998H10.9991V17.999Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    Add_default = Add;
+  }
+});
+
+// icons/AddSquare.ts
+var AddSquare_exports = {};
+__export(AddSquare_exports, {
+  default: () => AddSquare_default
+});
+var AddSquare, AddSquare_default;
+var init_AddSquare = __esm({
+  "icons/AddSquare.ts"() {
+    "use strict";
+    AddSquare = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  d="M15 12H12M12 12H9M12 12V9M12 12V15M17 21H7C4.79086 21 3 19.2091 3 17V7C3 4.79086 4.79086 3 7 3H17C19.2091 3 21 4.79086 21 7V17C21 19.2091 19.2091 21 17 21Z" stroke="#414042" stroke-width="2" stroke-linecap="round"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    AddSquare_default = AddSquare;
+  }
+});
+
+// icons/ArrowDown.ts
+var ArrowDown_exports = {};
+__export(ArrowDown_exports, {
+  default: () => ArrowDown_default
+});
+var ArrowDown, ArrowDown_default;
+var init_ArrowDown = __esm({
+  "icons/ArrowDown.ts"() {
+    "use strict";
+    ArrowDown = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M12 4C11.4477 4 11 4.44772 11 5L11 16.5858L8.70711 14.2929C8.31658 13.9024 7.68342 13.9024 7.29289 14.2929C6.90237 14.6834 6.90237 15.3166 7.29289 15.7071L11.2929 19.7071C11.6834 20.0976 12.3166 20.0976 12.7071 19.7071L16.7071 15.7071C17.0976 15.3166 17.0976 14.6834 16.7071 14.2929C16.3166 13.9024 15.6834 13.9024 15.2929 14.2929L13 16.5858L13 5C13 4.44772 12.5523 4 12 4Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    ArrowDown_default = ArrowDown;
+  }
+});
+
+// icons/ArrowLeft.ts
+var ArrowLeft_exports = {};
+__export(ArrowLeft_exports, {
+  default: () => ArrowLeft_default
+});
+var ArrowLeft, ArrowLeft_default;
+var init_ArrowLeft = __esm({
+  "icons/ArrowLeft.ts"() {
+    "use strict";
+    ArrowLeft = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M20 12C20 11.4477 19.5523 11 19 11H7.41421L9.70711 8.70711C10.0976 8.31658 10.0976 7.68342 9.70711 7.29289C9.31658 6.90237 8.68342 6.90237 8.29289 7.29289L4.29289 11.2929C3.90237 11.6834 3.90237 12.3166 4.29289 12.7071L8.29289 16.7071C8.68342 17.0976 9.31658 17.0976 9.70711 16.7071C10.0976 16.3166 10.0976 15.6834 9.70711 15.2929L7.41421 13H19C19.5523 13 20 12.5523 20 12Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    ArrowLeft_default = ArrowLeft;
+  }
+});
+
+// icons/ArrowRight.ts
+var ArrowRight_exports = {};
+__export(ArrowRight_exports, {
+  default: () => ArrowRight_default
+});
+var ArrowRight, ArrowRight_default;
+var init_ArrowRight = __esm({
+  "icons/ArrowRight.ts"() {
+    "use strict";
+    ArrowRight = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M4 12C4 12.5523 4.44771 13 5 13L16.5858 13L14.2929 15.2929C13.9024 15.6834 13.9024 16.3166 14.2929 16.7071C14.6834 17.0976 15.3166 17.0976 15.7071 16.7071L19.7071 12.7071C20.0976 12.3166 20.0976 11.6834 19.7071 11.2929L15.7071 7.29289C15.3166 6.90237 14.6834 6.90237 14.2929 7.29289C13.9024 7.68342 13.9024 8.31658 14.2929 8.70711L16.5858 11L5 11C4.44772 11 4 11.4477 4 12Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    ArrowRight_default = ArrowRight;
+  }
+});
+
+// icons/ArrowUp.ts
+var ArrowUp_exports = {};
+__export(ArrowUp_exports, {
+  default: () => ArrowUp_default
+});
+var ArrowUp, ArrowUp_default;
+var init_ArrowUp = __esm({
+  "icons/ArrowUp.ts"() {
+    "use strict";
+    ArrowUp = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M12 20C12.5523 20 13 19.5523 13 19V7.41421L15.2929 9.70711C15.6834 10.0976 16.3166 10.0976 16.7071 9.70711C17.0976 9.31658 17.0976 8.68342 16.7071 8.29289L12.7071 4.29289C12.3166 3.90237 11.6834 3.90237 11.2929 4.29289L7.29289 8.29289C6.90237 8.68342 6.90237 9.31658 7.29289 9.70711C7.68342 10.0976 8.31658 10.0976 8.70711 9.70711L11 7.41421V19C11 19.5523 11.4477 20 12 20Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    ArrowUp_default = ArrowUp;
+  }
+});
+
+// icons/BackLeft.ts
+var BackLeft_exports = {};
+__export(BackLeft_exports, {
+  default: () => BackLeft_default
+});
+var BackLeft, BackLeft_default;
+var init_BackLeft = __esm({
+  "icons/BackLeft.ts"() {
+    "use strict";
+    BackLeft = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M9.70711 20.7071C9.31658 21.0976 8.68342 21.0976 8.29289 20.7071L4.29289 16.7071C3.90237 16.3166 3.90237 15.6834 4.29289 15.2929L8.29289 11.2929C8.68342 10.9024 9.31658 10.9024 9.70711 11.2929C10.0976 11.6834 10.0976 12.3166 9.70711 12.7071L6.41421 16L9.70711 19.2929C10.0976 19.6834 10.0976 20.3166 9.70711 20.7071Z" fill="#414042"/>
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M20 13C20 15.2091 18.2091 17 16 17H5C4.44771 17 4 16.5523 4 16C4 15.4477 4.44771 15 5 15H16C17.1046 15 18 14.1046 18 13V4C18 3.44771 18.4477 3 19 3C19.5523 3 20 3.44771 20 4V13Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    BackLeft_default = BackLeft;
+  }
+});
+
+// icons/BackRight.ts
+var BackRight_exports = {};
+__export(BackRight_exports, {
+  default: () => BackRight_default
+});
+var BackRight, BackRight_default;
+var init_BackRight = __esm({
+  "icons/BackRight.ts"() {
+    "use strict";
+    BackRight = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M14.2929 20.7071C14.6834 21.0976 15.3166 21.0976 15.7071 20.7071L19.7071 16.7071C20.0976 16.3166 20.0976 15.6834 19.7071 15.2929L15.7071 11.2929C15.3166 10.9024 14.6834 10.9024 14.2929 11.2929C13.9024 11.6834 13.9024 12.3166 14.2929 12.7071L17.5858 16L14.2929 19.2929C13.9024 19.6834 13.9024 20.3166 14.2929 20.7071Z" fill="#414042"/>
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M4 13C4 15.2091 5.79086 17 8 17H19C19.5523 17 20 16.5523 20 16C20 15.4477 19.5523 15 19 15H8C6.89543 15 6 14.1046 6 13V4C6 3.44771 5.55228 3 5 3C4.44772 3 4 3.44771 4 4V13Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    BackRight_default = BackRight;
+  }
+});
+
+// icons/Bluetooth.ts
+var Bluetooth_exports = {};
+__export(Bluetooth_exports, {
+  default: () => Bluetooth_default
+});
+var Bluetooth, Bluetooth_default;
+var init_Bluetooth = __esm({
+  "icons/Bluetooth.ts"() {
+    "use strict";
+    Bluetooth = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M13.476 2.83591C12.817 2.46264 12.0002 2.9387 12.0002 3.69609V9.77383L5.50826 6.35438C5.03257 6.07377 4.41948 6.23192 4.13887 6.70761C3.85826 7.18329 4.01641 7.79639 4.4921 8.077L11.069 11.5466L4.50594 14.8464C4.02582 15.1193 3.85789 15.7298 4.13084 16.2099C4.4038 16.69 5.01429 16.858 5.4944 16.585L12.0002 13.3179L12.0002 19.7157C12.0002 20.4895 12.8413 20.9701 13.5079 20.5772L20.1617 16.6559C20.9492 16.1919 20.9494 15.053 20.1622 14.5886L15.0596 11.5785L20.1341 8.69358C20.9441 8.23309 20.9431 7.06544 20.1324 6.60624L13.5085 2.85433C13.4978 2.84799 13.4869 2.84185 13.476 2.83591ZM14.0002 5.43138L14.0002 9.8802L17.9201 7.65167L14.0002 5.43138ZM14.0002 13.2757V17.9656L17.9774 15.6218L14.0002 13.2757Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    Bluetooth_default = Bluetooth;
+  }
+});
+
+// icons/Calendar.ts
+var Calendar_exports = {};
+__export(Calendar_exports, {
+  default: () => Calendar_default
+});
+var Calendar, Calendar_default;
+var init_Calendar = __esm({
+  "icons/Calendar.ts"() {
+    "use strict";
+    Calendar = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  d="M7 11C7 10.4477 7.44772 10 8 10C8.55228 10 9 10.4477 9 11C9 11.5523 8.55228 12 8 12C7.44772 12 7 11.5523 7 11Z" fill="#414042"/>
+<path style="${this.colorStyle}"  d="M7 16C7 15.4477 7.44772 15 8 15C8.55228 15 9 15.4477 9 16C9 16.5523 8.55228 17 8 17C7.44772 17 7 16.5523 7 16Z" fill="#414042"/>
+<path style="${this.colorStyle}"  d="M11 11C11 10.4477 11.4477 10 12 10C12.5523 10 13 10.4477 13 11C13 11.5523 12.5523 12 12 12C11.4477 12 11 11.5523 11 11Z" fill="#414042"/>
+<path style="${this.colorStyle}"  d="M11 16C11 15.4477 11.4477 15 12 15C12.5523 15 13 15.4477 13 16C13 16.5523 12.5523 17 12 17C11.4477 17 11 16.5523 11 16Z" fill="#414042"/>
+<path style="${this.colorStyle}"  d="M15 11C15 10.4477 15.4477 10 16 10C16.5523 10 17 10.4477 17 11C17 11.5523 16.5523 12 16 12C15.4477 12 15 11.5523 15 11Z" fill="#414042"/>
+<path style="${this.colorStyle}"  d="M15 16C15 15.4477 15.4477 15 16 15C16.5523 15 17 15.4477 17 16C17 16.5523 16.5523 17 16 17C15.4477 17 15 16.5523 15 16Z" fill="#414042"/>
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M8 2C8.55228 2 9 2.44772 9 3V4H15V3C15 2.44772 15.4477 2 16 2C16.5523 2 17 2.44772 17 3V4C19.7614 4 22 6.23858 22 9V17C22 19.7614 19.7614 22 17 22H7C4.23858 22 2 19.7614 2 17V9C2 6.23858 4.23858 4 7 4V3C7 2.44772 7.44772 2 8 2ZM7 6C5.34315 6 4 7.34315 4 9V17C4 18.6569 5.34315 20 7 20H17C18.6569 20 20 18.6569 20 17V9C20 7.34315 18.6569 6 17 6C17 6.55229 16.5523 7 16 7C15.4477 7 15 6.55229 15 6H9C9 6.55229 8.55228 7 8 7C7.44772 7 7 6.55229 7 6Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    Calendar_default = Calendar;
+  }
+});
+
+// icons/CancelCircle.ts
+var CancelCircle_exports = {};
+__export(CancelCircle_exports, {
+  default: () => CancelCircle_default
+});
+var CancelCircle, CancelCircle_default;
+var init_CancelCircle = __esm({
+  "icons/CancelCircle.ts"() {
+    "use strict";
+    CancelCircle = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  d="M9.70711 8.29289C9.31658 7.90237 8.68342 7.90237 8.29289 8.29289C7.90237 8.68342 7.90237 9.31658 8.29289 9.70711L10.5858 12L8.29289 14.2929C7.90237 14.6834 7.90237 15.3166 8.29289 15.7071C8.68342 16.0976 9.31658 16.0976 9.70711 15.7071L12 13.4142L14.2929 15.7071C14.6834 16.0976 15.3166 16.0976 15.7071 15.7071C16.0976 15.3166 16.0976 14.6834 15.7071 14.2929L13.4142 12L15.7071 9.70711C16.0976 9.31658 16.0976 8.68342 15.7071 8.29289C15.3166 7.90237 14.6834 7.90237 14.2929 8.29289L12 10.5858L9.70711 8.29289Z" fill="#414042"/>
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    CancelCircle_default = CancelCircle;
+  }
+});
+
+// icons/Chart.ts
+var Chart_exports = {};
+__export(Chart_exports, {
+  default: () => Chart_default
+});
+var Chart, Chart_default;
+var init_Chart = __esm({
+  "icons/Chart.ts"() {
+    "use strict";
+    Chart = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M2 7C2 4.23858 4.23858 2 7 2H17C19.7614 2 22 4.23858 22 7V17C22 19.7614 19.7614 22 17 22H7C4.23858 22 2 19.7614 2 17V7ZM7 4C5.34315 4 4 5.34315 4 7V17C4 18.6569 5.34315 20 7 20H17C18.6569 20 20 18.6569 20 17V7C20 5.34315 18.6569 4 17 4H7ZM12 7C12.5523 7 13 7.44772 13 8V16C13 16.5523 12.5523 17 12 17C11.4477 17 11 16.5523 11 16V8C11 7.44772 11.4477 7 12 7ZM8 10C8.55228 10 9 10.4477 9 11V16C9 16.5523 8.55228 17 8 17C7.44772 17 7 16.5523 7 16V11C7 10.4477 7.44772 10 8 10ZM16 10C16.5523 10 17 10.4477 17 11V16C17 16.5523 16.5523 17 16 17C15.4477 17 15 16.5523 15 16V11C15 10.4477 15.4477 10 16 10Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    Chart_default = Chart;
+  }
+});
+
+// icons/ChatAudio.ts
+var ChatAudio_exports = {};
+__export(ChatAudio_exports, {
+  default: () => ChatAudio_default
+});
+var ChatAudio, ChatAudio_default;
+var init_ChatAudio = __esm({
+  "icons/ChatAudio.ts"() {
+    "use strict";
+    ChatAudio = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M2 7.24779C2 4.40699 4.1828 2 7 2H17C19.8172 2 22 4.40699 22 7.24779V14.6814C22 17.5222 19.8172 19.9292 17 19.9292H15.0162L12.743 21.7397C12.3073 22.0868 11.6927 22.0868 11.257 21.7397L8.98377 19.9292H7C4.1828 19.9292 2 17.5222 2 14.6814V7.24779ZM7 4C5.39892 4 4 5.39661 4 7.24779V14.6814C4 16.5326 5.39892 17.9292 7 17.9292H9.6829L12 19.7747L14.3171 17.9292H17C18.6011 17.9292 20 16.5326 20 14.6814V7.24779C20 5.39661 18.6011 4 17 4H7ZM11.497 20.1753C11.4974 20.175 11.4977 20.1747 11.4981 20.1744L11.497 20.1753ZM12.5019 20.1744C12.5023 20.1747 12.5026 20.175 12.503 20.1753L12.5019 20.1744Z" fill="#414042"/>
+<path style="${this.colorStyle}"  d="M11 8C11 7.44772 11.4477 7 12 7C12.5523 7 13 7.44772 13 8V15C13 15.5523 12.5523 16 12 16C11.4477 16 11 15.5523 11 15V8Z" fill="#414042"/>
+<path style="${this.colorStyle}"  d="M8 8C7.44772 8 7 8.44772 7 9V14C7 14.5523 7.44772 15 8 15C8.55228 15 9 14.5523 9 14V9C9 8.44772 8.55228 8 8 8Z" fill="#414042"/>
+<path style="${this.colorStyle}"  d="M16 8C15.4477 8 15 8.44772 15 9V14C15 14.5523 15.4477 15 16 15C16.5523 15 17 14.5523 17 14V9C17 8.44772 16.5523 8 16 8Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    ChatAudio_default = ChatAudio;
+  }
+});
+
+// icons/CheckCircle.ts
+var CheckCircle_exports = {};
+__export(CheckCircle_exports, {
+  default: () => CheckCircle_default
+});
+var CheckCircle, CheckCircle_default;
+var init_CheckCircle = __esm({
+  "icons/CheckCircle.ts"() {
+    "use strict";
+    CheckCircle = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM17.2975 8.29251C16.9074 7.89963 16.2719 7.89811 15.8804 8.28961L10 14.17L8.11568 12.293C7.72572 11.9045 7.09489 11.9051 6.70568 12.2943C6.31594 12.6841 6.31594 13.3159 6.70568 13.7057L8.58579 15.5858C9.36684 16.3668 10.6332 16.3668 11.4142 15.5858L17.2954 9.70461C17.6849 9.31506 17.6857 8.68343 17.2975 8.29251Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    CheckCircle_default = CheckCircle;
+  }
+});
+
+// icons/ChevronDown.ts
+var ChevronDown_exports = {};
+__export(ChevronDown_exports, {
+  default: () => ChevronDown_default
+});
+var ChevronDown, ChevronDown_default;
+var init_ChevronDown = __esm({
+  "icons/ChevronDown.ts"() {
+    "use strict";
+    ChevronDown = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M5.34923 8.23881C5.76855 7.87939 6.39985 7.92795 6.75927 8.34727L12 14.4615L17.2408 8.34727C17.6002 7.92795 18.2315 7.87939 18.6508 8.23881C19.0701 8.59823 19.1187 9.22953 18.7593 9.64886L12.9871 16.3831C12.4682 16.9884 11.5318 16.9884 11.013 16.3831L5.24076 9.64886C4.88134 9.22953 4.9299 8.59823 5.34923 8.23881Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    ChevronDown_default = ChevronDown;
+  }
+});
+
+// icons/ChevronLeft.ts
+var ChevronLeft_exports = {};
+__export(ChevronLeft_exports, {
+  default: () => ChevronLeft_default
+});
+var ChevronLeft, ChevronLeft_default;
+var init_ChevronLeft = __esm({
+  "icons/ChevronLeft.ts"() {
+    "use strict";
+    ChevronLeft = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M16.5981 5.34923C16.9575 5.76855 16.909 6.39985 16.4896 6.75927L10.3754 12L16.4896 17.2408C16.909 17.6002 16.9575 18.2315 16.5981 18.6508C16.2387 19.0701 15.6074 19.1187 15.1881 18.7593L8.4538 12.9871C7.8485 12.4682 7.8485 11.5318 8.4538 11.013L15.1881 5.24076C15.6074 4.88134 16.2387 4.9299 16.5981 5.34923Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    ChevronLeft_default = ChevronLeft;
+  }
+});
+
+// icons/ChevronRight.ts
+var ChevronRight_exports = {};
+__export(ChevronRight_exports, {
+  default: () => ChevronRight_default
+});
+var ChevronRight, ChevronRight_default;
+var init_ChevronRight = __esm({
+  "icons/ChevronRight.ts"() {
+    "use strict";
+    ChevronRight = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M8.24076 18.6508C7.88134 18.2314 7.9299 17.6001 8.34923 17.2407L14.4634 12L8.34923 6.75924C7.9299 6.39982 7.88134 5.76852 8.24076 5.34919C8.60018 4.92986 9.23148 4.8813 9.65081 5.24073L16.3851 11.0129C16.9904 11.5318 16.9904 12.4682 16.3851 12.987L9.65081 18.7592C9.23148 19.1187 8.60018 19.0701 8.24076 18.6508Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    ChevronRight_default = ChevronRight;
+  }
+});
+
+// icons/ChevronUp.ts
+var ChevronUp_exports = {};
+__export(ChevronUp_exports, {
+  default: () => ChevronUp_default
+});
+var ChevronUp, ChevronUp_default;
+var init_ChevronUp = __esm({
+  "icons/ChevronUp.ts"() {
+    "use strict";
+    ChevronUp = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M18.6508 16.5991C18.2314 16.9585 17.6001 16.9099 17.2407 16.4906L12 10.3764L6.75924 16.4906C6.39982 16.9099 5.76852 16.9585 5.34919 16.5991C4.92986 16.2397 4.8813 15.6084 5.24073 15.189L11.0129 8.45477C11.5318 7.84948 12.4682 7.84948 12.987 8.45477L18.7592 15.189C19.1187 15.6084 19.0701 16.2397 18.6508 16.5991Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    ChevronUp_default = ChevronUp;
+  }
+});
+
+// icons/ChevronUpDown.ts
+var ChevronUpDown_exports = {};
+__export(ChevronUpDown_exports, {
+  default: () => ChevronUpDown_default
+});
+var ChevronUpDown, ChevronUpDown_default;
+var init_ChevronUpDown = __esm({
+  "icons/ChevronUpDown.ts"() {
+    "use strict";
+    ChevronUpDown = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M12 2C12.2968 2 12.5783 2.13182 12.7682 2.35982L17.7682 8.35982C18.1218 8.78409 18.0645 9.41466 17.6402 9.76822C17.2159 10.1218 16.5854 10.0645 16.2318 9.64018L12 4.56205L7.76825 9.64018C7.41468 10.0645 6.78412 10.1218 6.35984 9.76822C5.93556 9.41466 5.87824 8.78409 6.2318 8.35982L11.2318 2.35982C11.4218 2.13182 11.7032 2 12 2Z" fill="#414042"/>
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M12 22C12.2968 22 12.5783 21.8682 12.7682 21.6402L17.7682 15.6402C18.1218 15.2159 18.0645 14.5853 17.6402 14.2318C17.2159 13.8782 16.5854 13.9355 16.2318 14.3598L12 19.438L7.76825 14.3598C7.41468 13.9355 6.78412 13.8782 6.35984 14.2318C5.93556 14.5853 5.87824 15.2159 6.2318 15.6402L11.2318 21.6402C11.4218 21.8682 11.7032 22 12 22Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    ChevronUpDown_default = ChevronUpDown;
+  }
+});
+
+// icons/Close.ts
+var Close_exports = {};
+__export(Close_exports, {
+  default: () => Close_default
+});
+var Close, Close_default;
+var init_Close = __esm({
+  "icons/Close.ts"() {
+    "use strict";
+    Close = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  d="M18.295 7.115C18.6844 6.72564 18.6844 6.09436 18.295 5.705C17.9056 5.31564 17.2744 5.31564 16.885 5.705L12 10.59L7.115 5.705C6.72564 5.31564 6.09436 5.31564 5.705 5.705C5.31564 6.09436 5.31564 6.72564 5.705 7.115L10.59 12L5.705 16.885C5.31564 17.2744 5.31564 17.9056 5.705 18.295C6.09436 18.6844 6.72564 18.6844 7.115 18.295L12 13.41L16.885 18.295C17.2744 18.6844 17.9056 18.6844 18.295 18.295C18.6844 17.9056 18.6844 17.2744 18.295 16.885L13.41 12L18.295 7.115Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    Close_default = Close;
+  }
+});
+
 // icons/ComputerEdit.ts
 var ComputerEdit_exports = {};
 __export(ComputerEdit_exports, {
@@ -68,6 +1081,56 @@ var init_ComputerEdit = __esm({
       }
     };
     ComputerEdit_default = ComputerEdit;
+  }
+});
+
+// icons/Computer.ts
+var Computer_exports = {};
+__export(Computer_exports, {
+  default: () => Computer_default
+});
+var Computer, Computer_default;
+var init_Computer = __esm({
+  "icons/Computer.ts"() {
+    "use strict";
+    Computer = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M2 6C2 4.34315 3.34315 3 5 3H19C20.6569 3 22 4.34315 22 6V15C22 16.6569 20.6569 18 19 18H13V19H15C15.5523 19 16 19.4477 16 20C16 20.5523 15.5523 21 15 21H9C8.44772 21 8 20.5523 8 20C8 19.4477 8.44772 19 9 19H11V18H5C3.34315 18 2 16.6569 2 15V6ZM5 5C4.44772 5 4 5.44772 4 6V15C4 15.5523 4.44772 16 5 16H19C19.5523 16 20 15.5523 20 15V6C20 5.44772 19.5523 5 19 5H5Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    Computer_default = Computer;
   }
 });
 
@@ -142,10 +1205,10 @@ var init_Detail = __esm({
         this.color = "";
         this._initElement();
         const shadowRoot = this.attachShadow({ mode: "closed" });
-        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path style="${this.colorStyle}" d="M6 13.3359H5.06667C4.11333 13.3359 3.33333 12.5559 3.33333 11.6026V4.4026C3.33333 3.44927 4.11333 2.66927 5.06667 2.66927H8.88667C9.02667 2.66927 9.16667 2.72927 9.26667 2.8226L9.30667 2.8626V4.28927C9.30667 4.8826 9.78667 5.36927 10.3867 5.36927H11.7C11.7133 5.40927 11.7267 5.45594 11.7267 5.5026C11.7267 5.86927 12.0267 6.16927 12.3933 6.16927C12.76 6.16927 13.06 5.86927 13.06 5.5026C13.06 5.00927 12.86 4.52927 12.5133 4.1826L10.2133 1.8826C9.86 1.53594 9.38 1.33594 8.88667 1.33594H5.06667C3.37333 1.33594 2 2.70927 2 4.4026V11.6026C2 13.2959 3.37333 14.6693 5.06667 14.6693H6C6.36667 14.6693 6.66667 14.3693 6.66667 14.0026C6.66667 13.6359 6.36667 13.3359 6 13.3359Z"
-        fill="#3D00C3"/><path style="${this.colorStyle}" 
-        d="M13.7276 13.5255L12.501 12.2989C13.0476 11.6322 13.3743 10.7789 13.3743 9.85219C13.3743 7.72552 11.641 5.99219 9.5143 5.99219C7.38763 5.99219 5.6543 7.72552 5.6543 9.85219C5.6543 11.9789 7.38763 13.7122 9.5143 13.7122C10.2343 13.7122 10.9076 13.5122 11.481 13.1655L12.781 14.4655C12.9143 14.5989 13.081 14.6589 13.2543 14.6589C13.4276 14.6589 13.5943 14.5922 13.7276 14.4655C13.9876 14.2122 13.9876 13.7855 13.7276 13.5255ZM6.9943 9.85885C6.9943 8.46552 8.12763 7.33219 9.52096 7.33219C10.9143 7.33219 12.0476 8.46552 12.0476 9.85885C12.0476 11.2522 10.9143 12.3855 9.52096 12.3855C8.12763 12.3855 6.9943 11.2522 6.9943 9.85885Z"
-        fill="#3D00C3"/></svg>
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  d="M9 20H7.6C6.17 20 5 18.83 5 17.4V6.6C5 5.17 6.17 4 7.6 4H13.33C13.54 4 13.75 4.09 13.9 4.23L13.96 4.29V6.43C13.96 7.32 14.68 8.05 15.58 8.05H17.55C17.57 8.11 17.59 8.18 17.59 8.25C17.59 8.8 18.04 9.25 18.59 9.25C19.14 9.25 19.59 8.8 19.59 8.25C19.59 7.51 19.29 6.79 18.77 6.27L15.32 2.82C14.79 2.3 14.07 2 13.33 2H7.6C5.06 2 3 4.06 3 6.6V17.4C3 19.94 5.06 22 7.6 22H9C9.55 22 10 21.55 10 21C10 20.45 9.55 20 9 20Z" fill="black"/>
+<path style="${this.colorStyle}"  d="M20.5905 20.2902L18.7505 18.4502C19.5705 17.4502 20.0605 16.1702 20.0605 14.7802C20.0605 11.5902 17.4605 8.99023 14.2705 8.99023C11.0805 8.99023 8.48047 11.5902 8.48047 14.7802C8.48047 17.9702 11.0805 20.5702 14.2705 20.5702C15.3505 20.5702 16.3605 20.2702 17.2205 19.7502L19.1705 21.7002C19.3705 21.9002 19.6205 21.9902 19.8805 21.9902C20.1405 21.9902 20.3905 21.8902 20.5905 21.7002C20.9805 21.3202 20.9805 20.6802 20.5905 20.2902ZM10.4905 14.7902C10.4905 12.7002 12.1905 11.0002 14.2805 11.0002C16.3705 11.0002 18.0705 12.7002 18.0705 14.7902C18.0705 16.8802 16.3705 18.5802 14.2805 18.5802C12.1905 18.5802 10.4905 16.8802 10.4905 14.7902Z" fill="black"/>
+</svg>
 `;
       }
       attributeChangedCallback(name, _, newValue) {
@@ -170,6 +1233,614 @@ var init_Detail = __esm({
       }
     };
     Detail_default = Detail;
+  }
+});
+
+// icons/DoubleChevronDown.ts
+var DoubleChevronDown_exports = {};
+__export(DoubleChevronDown_exports, {
+  default: () => DoubleChevronDown_default
+});
+var DoubleChevronDown, DoubleChevronDown_default;
+var init_DoubleChevronDown = __esm({
+  "icons/DoubleChevronDown.ts"() {
+    "use strict";
+    DoubleChevronDown = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M5.34923 5.24076C5.76855 4.88134 6.39985 4.9299 6.75927 5.34923L12 11.4634L17.2408 5.34923C17.6002 4.9299 18.2315 4.88134 18.6508 5.24076C19.0701 5.60018 19.1187 6.23148 18.7593 6.65081L12.9871 13.3851C12.4682 13.9904 11.5318 13.9904 11.013 13.3851L5.24076 6.65081C4.88134 6.23148 4.9299 5.60018 5.34923 5.24076Z" fill="#414042"/>
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M5.34923 11.2408C5.76855 10.8813 6.39985 10.9299 6.75927 11.3492L12 17.4634L17.2408 11.3492C17.6002 10.9299 18.2315 10.8813 18.6508 11.2408C19.0701 11.6002 19.1187 12.2315 18.7593 12.6508L12.9871 19.3851C12.4682 19.9904 11.5318 19.9904 11.013 19.3851L5.24076 12.6508C4.88134 12.2315 4.9299 11.6002 5.34923 11.2408Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    DoubleChevronDown_default = DoubleChevronDown;
+  }
+});
+
+// icons/DoubleChevronLeft.ts
+var DoubleChevronLeft_exports = {};
+__export(DoubleChevronLeft_exports, {
+  default: () => DoubleChevronLeft_default
+});
+var DoubleChevronLeft, DoubleChevronLeft_default;
+var init_DoubleChevronLeft = __esm({
+  "icons/DoubleChevronLeft.ts"() {
+    "use strict";
+    DoubleChevronLeft = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M19.1792 5.76915C19.5386 6.18847 19.49 6.81977 19.0707 7.1792L12.9565 12.4199L19.0707 17.6607C19.49 18.0201 19.5386 18.6514 19.1792 19.0707C18.8197 19.4901 18.1884 19.5386 17.7691 19.1792L11.0349 13.407C10.4296 12.8881 10.4296 11.9517 11.0349 11.4329L17.7691 5.66068C18.1884 5.30126 18.8197 5.34982 19.1792 5.76915Z" fill="#414042"/>
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M13.1792 5.76915C13.5386 6.18847 13.49 6.81977 13.0707 7.1792L6.95649 12.4199L13.0707 17.6607C13.49 18.0201 13.5386 18.6514 13.1792 19.0707C12.8197 19.4901 12.1884 19.5386 11.7691 19.1792L5.03485 13.407C4.42956 12.8881 4.42956 11.9517 5.03485 11.4329L11.7691 5.66068C12.1884 5.30126 12.8197 5.34982 13.1792 5.76915Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    DoubleChevronLeft_default = DoubleChevronLeft;
+  }
+});
+
+// icons/DoubleChevronRight.ts
+var DoubleChevronRight_exports = {};
+__export(DoubleChevronRight_exports, {
+  default: () => DoubleChevronRight_default
+});
+var DoubleChevronRight, DoubleChevronRight_default;
+var init_DoubleChevronRight = __esm({
+  "icons/DoubleChevronRight.ts"() {
+    "use strict";
+    DoubleChevronRight = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M5.24076 18.6508C4.88134 18.2314 4.9299 17.6001 5.34923 17.2407L11.4634 12L5.34923 6.75924C4.9299 6.39982 4.88134 5.76852 5.24076 5.34919C5.60018 4.92986 6.23148 4.8813 6.65081 5.24073L13.3851 11.0129C13.9904 11.5318 13.9904 12.4682 13.3851 12.987L6.65081 18.7592C6.23148 19.1187 5.60018 19.0701 5.24076 18.6508Z" fill="#414042"/>
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M11.2408 18.6508C10.8813 18.2314 10.9299 17.6001 11.3492 17.2407L17.4634 12L11.3492 6.75924C10.9299 6.39982 10.8813 5.76852 11.2408 5.34919C11.6002 4.92986 12.2315 4.8813 12.6508 5.24073L19.3851 11.0129C19.9904 11.5318 19.9904 12.4682 19.3851 12.987L12.6508 18.7592C12.2315 19.1187 11.6002 19.0701 11.2408 18.6508Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    DoubleChevronRight_default = DoubleChevronRight;
+  }
+});
+
+// icons/DoubleChevronUp.ts
+var DoubleChevronUp_exports = {};
+__export(DoubleChevronUp_exports, {
+  default: () => DoubleChevronUp_default
+});
+var DoubleChevronUp, DoubleChevronUp_default;
+var init_DoubleChevronUp = __esm({
+  "icons/DoubleChevronUp.ts"() {
+    "use strict";
+    DoubleChevronUp = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M18.6508 19.5981C18.2314 19.9575 17.6001 19.909 17.2407 19.4896L12 13.3754L6.75924 19.4896C6.39982 19.909 5.76852 19.9575 5.34919 19.5981C4.92986 19.2387 4.8813 18.6074 5.24073 18.1881L11.0129 11.4538C11.5318 10.8485 12.4682 10.8485 12.987 11.4538L18.7592 18.1881C19.1187 18.6074 19.0701 19.2387 18.6508 19.5981Z" fill="#414042"/>
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M18.6508 13.5981C18.2314 13.9575 17.6001 13.909 17.2407 13.4896L12 7.37544L6.75924 13.4896C6.39982 13.909 5.76852 13.9575 5.34919 13.5981C4.92986 13.2387 4.8813 12.6074 5.24073 12.1881L11.0129 5.4538C11.5318 4.8485 12.4682 4.8485 12.987 5.4538L18.7592 12.1881C19.1187 12.6074 19.0701 13.2387 18.6508 13.5981Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    DoubleChevronUp_default = DoubleChevronUp;
+  }
+});
+
+// icons/Envelope.ts
+var Envelope_exports = {};
+__export(Envelope_exports, {
+  default: () => Envelope_default
+});
+var Envelope, Envelope_default;
+var init_Envelope = __esm({
+  "icons/Envelope.ts"() {
+    "use strict";
+    Envelope = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  d="M17 3H7C4.24 3 2 5.24 2 8V16C2 18.76 4.24 21 7 21H17C19.76 21 22 18.76 22 16V8C22 5.24 19.76 3 17 3ZM7 5H17C17.88 5 18.66 5.39 19.21 5.99L12.55 10.43C12.21 10.65 11.78 10.65 11.44 10.43L4.79 5.99C5.34 5.39 6.12 5 7 5ZM20 16C20 17.65 18.65 19 17 19H7C5.35 19 4 17.65 4 16V8C4 7.96 4.01 7.92 4.01 7.88L10.33 12.1C10.84 12.43 11.42 12.6 12 12.6C12.58 12.6 13.16 12.43 13.66 12.09L19.98 7.87C19.99 7.92 20 7.96 20 8V16Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    Envelope_default = Envelope;
+  }
+});
+
+// icons/EnvelopeOpen.ts
+var EnvelopeOpen_exports = {};
+__export(EnvelopeOpen_exports, {
+  default: () => EnvelopeOpen_default
+});
+var EnvelopeOpen, EnvelopeOpen_default;
+var init_EnvelopeOpen = __esm({
+  "icons/EnvelopeOpen.ts"() {
+    "use strict";
+    EnvelopeOpen = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  d="M21.59 7.51253L21.6 7.49253L21.52 7.43253C21.32 7.19253 21.07 7.00253 20.78 6.87253L13.64 1.50253C12.66 0.842528 11.37 0.822528 10.3 1.50253L3.2 6.88253C2.92 7.01253 2.68 7.20253 2.48 7.43253L2.4 7.49253L2.42 7.51253C2.16 7.85253 2 8.26253 2 8.71253V17.0025C2 19.7625 4.24 22.0025 7 22.0025H17C19.76 22.0025 22 19.7625 22 17.0025V8.71253C22 8.26253 21.84 7.85253 21.59 7.51253ZM11.43 3.15253C11.76 2.94253 12.19 2.94253 12.48 3.13253L18.96 8.00253L12.57 12.8525C12.24 13.0625 11.81 13.0625 11.52 12.8725L5.04 8.00253L11.43 3.15253ZM17 20.0125H7C5.35 20.0125 4 18.6625 4 17.0125V9.72253L10.36 14.5025C10.86 14.8325 11.43 15.0025 12.01 15.0025C12.59 15.0025 13.17 14.8325 13.71 14.4925L20 9.73253V17.0125C20 18.6625 18.65 20.0125 17 20.0125Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    EnvelopeOpen_default = EnvelopeOpen;
+  }
+});
+
+// icons/Error.ts
+var Error_exports = {};
+__export(Error_exports, {
+  default: () => Error_default
+});
+var Error2, Error_default;
+var init_Error = __esm({
+  "icons/Error.ts"() {
+    "use strict";
+    Error2 = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20ZM11 16C11 15.4477 11.4477 15 12 15C12.5523 15 13 15.4477 13 16C13 16.5523 12.5523 17 12 17C11.4477 17 11 16.5523 11 16ZM11 8C11 7.44772 11.4477 7 12 7C12.5523 7 13 7.44772 13 8V12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12V8Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    Error_default = Error2;
+  }
+});
+
+// icons/ExitFullscreen.ts
+var ExitFullscreen_exports = {};
+__export(ExitFullscreen_exports, {
+  default: () => ExitFullscreen_default
+});
+var ExitFullscreen, ExitFullscreen_default;
+var init_ExitFullscreen = __esm({
+  "icons/ExitFullscreen.ts"() {
+    "use strict";
+    ExitFullscreen = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  d="M22 9C22 9.55228 21.5523 10 21 10H19.75C16.8264 10 14.25 7.8689 14.25 5V4C14.25 3.44772 14.6977 3 15.25 3C15.8023 3 16.25 3.44772 16.25 4V5C16.25 6.54938 17.703 8 19.75 8H21C21.5523 8 22 8.44772 22 9Z" fill="#414042"/>
+<path style="${this.colorStyle}"  d="M7.75 20C7.75 20.5523 8.19772 21 8.75 21C9.30228 21 9.75 20.5523 9.75 20V19C9.75 16.1311 7.17358 14 4.25 14H3C2.44772 14 2 14.4477 2 15C2 15.5523 2.44772 16 3 16H4.25C6.29698 16 7.75 17.4506 7.75 19V20Z" fill="#414042"/>
+<path style="${this.colorStyle}"  d="M14.25 20C14.25 20.5523 14.6977 21 15.25 21C15.8023 21 16.25 20.5523 16.25 20V19C16.25 17.4506 17.703 16 19.75 16H21C21.5523 16 22 15.5523 22 15C22 14.4477 21.5523 14 21 14H19.75C16.8264 14 14.25 16.1311 14.25 19V20Z" fill="#414042"/>
+<path style="${this.colorStyle}"  d="M4.25 10C7.17358 10 9.75 7.8689 9.75 5V4C9.75 3.44772 9.30228 3 8.75 3C8.19772 3 7.75 3.44772 7.75 4V5C7.75 6.54938 6.29698 8 4.25 8H3C2.44772 8 2 8.44772 2 9C2 9.55228 2.44772 10 3 10H4.25Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    ExitFullscreen_default = ExitFullscreen;
+  }
+});
+
+// icons/Filter.ts
+var Filter_exports = {};
+__export(Filter_exports, {
+  default: () => Filter_default
+});
+var Filter, Filter_default;
+var init_Filter = __esm({
+  "icons/Filter.ts"() {
+    "use strict";
+    Filter = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M3 5C3 3.89543 3.89543 3 5 3H19C20.1046 3 21 3.89543 21 5V8.36992L15 15.3699V17.3501C15 18.1405 14.5345 18.8567 13.8123 19.1777L11.3123 20.2889C9.9897 20.8767 8.5 19.9086 8.5 18.4612V15.3459L3 8.34586V5ZM19 5H5V7H19V5ZM17.8258 9H6.05746L10.0726 14.1102C10.3495 14.4626 10.5 14.8977 10.5 15.3459V18.4612L13 17.3501V15.3699C13 14.8925 13.1708 14.4308 13.4815 14.0683L17.8258 9Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    Filter_default = Filter;
+  }
+});
+
+// icons/Folder.ts
+var Folder_exports = {};
+__export(Folder_exports, {
+  default: () => Folder_default
+});
+var Folder, Folder_default;
+var init_Folder = __esm({
+  "icons/Folder.ts"() {
+    "use strict";
+    Folder = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  d="M9 5C9.36 5 10.28 5.82 10.73 6.21C11.69 7.06 12.68 7.93 14 7.93H17C18.65 7.93 20 9.28 20 10.93V15.86C20 17.51 18.65 18.86 17 18.86H7C5.35 18.86 4 17.51 4 15.86V7C4 5.9 4.9 5 6 5H9ZM9 3H6C3.79 3 2 4.79 2 7V15.86C2 18.62 4.24 20.86 7 20.86H17C19.76 20.86 22 18.62 22 15.86V10.93C22 8.17 19.76 5.93 17 5.93H14C12.73 5.93 11 3 9 3Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    Folder_default = Folder;
+  }
+});
+
+// icons/Forward.ts
+var Forward_exports = {};
+__export(Forward_exports, {
+  default: () => Forward_default
+});
+var Forward, Forward_default;
+var init_Forward = __esm({
+  "icons/Forward.ts"() {
+    "use strict";
+    Forward = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M3 14.2611V9.40807C3 7.32253 5.24043 6.00426 7.06352 7.01708L11.4312 9.44358C13.307 10.4857 13.307 13.1834 11.4312 14.2256L7.06352 16.652C5.24043 17.6649 3 16.3466 3 14.2611ZM5 14.2611V9.40807C5 8.8475 5.6022 8.49316 6.09223 8.7654L10.4599 11.1919C10.9641 11.472 10.9641 12.1971 10.4599 12.4772L6.09223 14.9037C5.60221 15.176 5 14.8216 5 14.2611Z" fill="#414042"/>
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M11.2441 14.2611V9.40807C11.2441 7.32253 13.4846 6.00426 15.3077 7.01708L19.6753 9.44358C21.5512 10.4857 21.5512 13.1834 19.6753 14.2256L15.3077 16.652C13.4846 17.6649 11.2441 16.3466 11.2441 14.2611ZM13.2441 14.2611V9.40807C13.2441 8.8475 13.8463 8.49316 14.3364 8.7654L18.7041 11.1919C19.2083 11.472 19.2083 12.1971 18.7041 12.4772L14.3364 14.9037C13.8463 15.176 13.2441 14.8216 13.2441 14.2611Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    Forward_default = Forward;
+  }
+});
+
+// icons/Fullscreen.ts
+var Fullscreen_exports = {};
+__export(Fullscreen_exports, {
+  default: () => Fullscreen_default
+});
+var Fullscreen, Fullscreen_default;
+var init_Fullscreen = __esm({
+  "icons/Fullscreen.ts"() {
+    "use strict";
+    Fullscreen = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M2 8C2 5.1311 4.57642 3 7.5 3H8.75C9.30228 3 9.75 3.44772 9.75 4C9.75 4.55228 9.30228 5 8.75 5H7.5C5.45302 5 4 6.45062 4 8V9C4 9.55228 3.55228 10 3 10C2.44772 10 2 9.55228 2 9V8ZM14.25 4C14.25 3.44772 14.6977 3 15.25 3H16.5C19.4236 3 22 5.1311 22 8V9C22 9.55228 21.5523 10 21 10C20.4477 10 20 9.55228 20 9V8C20 6.45062 18.547 5 16.5 5H15.25C14.6977 5 14.25 4.55228 14.25 4ZM3 14C3.55228 14 4 14.4477 4 15V16C4 17.5494 5.45302 19 7.5 19H8.75C9.30228 19 9.75 19.4477 9.75 20C9.75 20.5523 9.30228 21 8.75 21H7.5C4.57642 21 2 18.8689 2 16V15C2 14.4477 2.44772 14 3 14ZM21 14C21.5523 14 22 14.4477 22 15V16C22 18.8689 19.4236 21 16.5 21H15.25C14.6977 21 14.25 20.5523 14.25 20C14.25 19.4477 14.6977 19 15.25 19H16.5C18.547 19 20 17.5494 20 16V15C20 14.4477 20.4477 14 21 14Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    Fullscreen_default = Fullscreen;
   }
 });
 
@@ -217,6 +1888,363 @@ var init_Github = __esm({
       }
     };
     Github_default = Github;
+  }
+});
+
+// icons/Graph.ts
+var Graph_exports = {};
+__export(Graph_exports, {
+  default: () => Graph_default
+});
+var Graph, Graph_default;
+var init_Graph = __esm({
+  "icons/Graph.ts"() {
+    "use strict";
+    Graph = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  d="M17.8321 9.5547C18.1384 9.09517 18.0142 8.4743 17.5547 8.16795C17.0952 7.8616 16.4743 7.98577 16.168 8.4453L13.3925 12.6085L10.0529 10.3542C9.421 9.92768 8.55941 10.1339 8.18917 10.8004L6.12584 14.5144C5.85763 14.9971 6.03157 15.6059 6.51436 15.8742C6.99714 16.1424 7.60594 15.9684 7.87416 15.4856L9.56672 12.439L12.8571 14.66C13.4546 15.0634 14.2662 14.9035 14.6661 14.3036L17.8321 9.5547Z" fill="#414042"/>
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M7 2C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2H7ZM4 7C4 5.34315 5.34315 4 7 4H17C18.6569 4 20 5.34315 20 7V17C20 18.6569 18.6569 20 17 20H7C5.34315 20 4 18.6569 4 17V7Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    Graph_default = Graph;
+  }
+});
+
+// icons/Info.ts
+var Info_exports = {};
+__export(Info_exports, {
+  default: () => Info_default
+});
+var Info, Info_default;
+var init_Info = __esm({
+  "icons/Info.ts"() {
+    "use strict";
+    Info = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  d="M11 8C11 7.44772 11.4477 7 12 7C12.5523 7 13 7.44772 13 8C13 8.55228 12.5523 9 12 9C11.4477 9 11 8.55228 11 8ZM11 12C11 11.4477 11.4477 11 12 11C12.5523 11 13 11.4477 13 12V16C13 16.5523 12.5523 17 12 17C11.4477 17 11 16.5523 11 16V12ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    Info_default = Info;
+  }
+});
+
+// icons/InfoSquare.ts
+var InfoSquare_exports = {};
+__export(InfoSquare_exports, {
+  default: () => InfoSquare_default
+});
+var InfoSquare, InfoSquare_default;
+var init_InfoSquare = __esm({
+  "icons/InfoSquare.ts"() {
+    "use strict";
+    InfoSquare = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  d="M12 17C11.4477 17 11 16.5523 11 16L11 11C11 10.4477 11.4477 10 12 10C12.5523 10 13 10.4477 13 11L13 16C13 16.5523 12.5523 17 12 17Z" fill="#414042"/>
+<path style="${this.colorStyle}"  d="M11 8C11 7.44771 11.4477 7 12 7C12.5523 7 13 7.44771 13 8C13 8.55228 12.5523 9 12 9C11.4477 9 11 8.55228 11 8Z" fill="#414042"/>
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M17 22C19.7614 22 22 19.7614 22 17L22 7C22 4.23858 19.7614 2 17 2L7 2C4.23858 2 2 4.23858 2 7L2 17C2 19.7614 4.23858 22 7 22L17 22ZM20 17C20 18.6569 18.6569 20 17 20L7 20C5.34315 20 4 18.6569 4 17L4 7C4 5.34314 5.34315 4 7 4L17 4C18.6569 4 20 5.34315 20 7L20 17Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    InfoSquare_default = InfoSquare;
+  }
+});
+
+// icons/Minus.ts
+var Minus_exports = {};
+__export(Minus_exports, {
+  default: () => Minus_default
+});
+var Minus, Minus_default;
+var init_Minus = __esm({
+  "icons/Minus.ts"() {
+    "use strict";
+    Minus = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M6 12C6 11.4477 6.44772 11 7 11H17C17.5523 11 18 11.4477 18 12C18 12.5523 17.5523 13 17 13H7C6.44772 13 6 12.5523 6 12Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    Minus_default = Minus;
+  }
+});
+
+// icons/Mobile.ts
+var Mobile_exports = {};
+__export(Mobile_exports, {
+  default: () => Mobile_default
+});
+var Mobile, Mobile_default;
+var init_Mobile = __esm({
+  "icons/Mobile.ts"() {
+    "use strict";
+    Mobile = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M8 2C6.34315 2 5 3.34315 5 5V19C5 20.6569 6.34315 22 8 22H16C17.6569 22 19 20.6569 19 19V5C19 3.34315 17.6569 2 16 2H8ZM7 5C7 4.44772 7.44772 4 8 4H16C16.5523 4 17 4.44772 17 5V19C17 19.5523 16.5523 20 16 20H8C7.44772 20 7 19.5523 7 19V5ZM10 17C9.44772 17 9 17.4477 9 18C9 18.5523 9.44772 19 10 19H14C14.5523 19 15 18.5523 15 18C15 17.4477 14.5523 17 14 17H10Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    Mobile_default = Mobile;
+  }
+});
+
+// icons/MultipleFiles.ts
+var MultipleFiles_exports = {};
+__export(MultipleFiles_exports, {
+  default: () => MultipleFiles_default
+});
+var MultipleFiles, MultipleFiles_default;
+var init_MultipleFiles = __esm({
+  "icons/MultipleFiles.ts"() {
+    "use strict";
+    MultipleFiles = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  d="M17.0442 19.3949H10.5543C8.37878 19.3949 6.60547 17.6216 6.60547 15.4461V5.94881C6.60547 3.77331 8.37878 2 10.5543 2H15.5908C16.2216 2 16.8157 2.2468 17.2636 2.6947L20.2892 5.72029C20.7371 6.16819 20.9839 6.76234 20.9839 7.39305V15.4369C20.993 17.6216 19.2197 19.3949 17.0442 19.3949ZM10.5543 3.58135C9.24715 3.58135 8.18682 4.64168 8.18682 5.94881V15.4369C8.18682 16.7441 9.24715 17.8044 10.5543 17.8044H17.0351C18.3422 17.8044 19.4025 16.7441 19.4025 15.4369V7.39305C19.4025 7.18282 19.3203 6.98172 19.174 6.83547L16.1576 3.80987C16.0113 3.66362 15.8102 3.58135 15.6 3.58135H10.5543Z" fill="#414042"/>
+<path style="${this.colorStyle}"  d="M15.6543 2.78613V6.14994C15.6543 7.02745 16.3581 7.73129 17.2356 7.73129H20.3984L15.6543 2.78613Z" fill="#414042"/>
+<path style="${this.colorStyle}"  d="M14.4296 22.0005H7.94881C5.77331 22.0005 4 20.2272 4 18.0425V8.56356C4 6.38805 5.77331 4.61475 7.94881 4.61475V6.1961C6.64168 6.1961 5.58135 7.25643 5.58135 8.56356V18.0517C5.58135 19.3588 6.64168 20.4191 7.94881 20.4191H14.4296C15.7367 20.4191 16.7971 19.3588 16.7971 18.0517H18.3784C18.3876 20.2272 16.6143 22.0005 14.4296 22.0005Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    MultipleFiles_default = MultipleFiles;
+  }
+});
+
+// icons/Mute.ts
+var Mute_exports = {};
+__export(Mute_exports, {
+  default: () => Mute_default
+});
+var Mute, Mute_default;
+var init_Mute = __esm({
+  "icons/Mute.ts"() {
+    "use strict";
+    Mute = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  d="M18.2071 7.20711C18.5976 6.81658 18.5976 6.18342 18.2071 5.79289C17.8166 5.40237 17.1834 5.40237 16.7929 5.79289L5.79289 16.7929C5.40237 17.1834 5.40237 17.8166 5.79289 18.2071C6.18342 18.5976 6.81658 18.5976 7.20711 18.2071L18.2071 7.20711Z" fill="#414042"/>
+<path style="${this.colorStyle}"  d="M10.8639 8.6L15.3 5.87158L10.5716 10.6H8V13.1716L6.33126 14.8403C6.12404 14.5831 6 14.256 6 13.9V10.1C6 9.27157 6.67157 8.6 7.5 8.6H10.8639Z" fill="#414042"/>
+<path style="${this.colorStyle}"  d="M16 16.2109L12.6673 14.1611L11.2135 15.615L15.7142 18.3831C16.7136 18.9978 18 18.2788 18 17.1055V8.82844L16 10.8284V16.2109Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    Mute_default = Mute;
   }
 });
 
@@ -320,6 +2348,871 @@ var init_Npm = __esm({
   }
 });
 
+// icons/Pause.ts
+var Pause_exports = {};
+__export(Pause_exports, {
+  default: () => Pause_default
+});
+var Pause, Pause_default;
+var init_Pause = __esm({
+  "icons/Pause.ts"() {
+    "use strict";
+    Pause = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M9 15V9C9 8.44772 8.55228 8 8 8C7.44772 8 7 8.44772 7 9V15C7 15.5523 7.44772 16 8 16C8.55228 16 9 15.5523 9 15ZM8 6C6.34315 6 5 7.34315 5 9V15C5 16.6569 6.34315 18 8 18C9.65685 18 11 16.6569 11 15V9C11 7.34315 9.65685 6 8 6Z" fill="#414042"/>
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M17 15V9C17 8.44772 16.5523 8 16 8C15.4477 8 15 8.44772 15 9V15C15 15.5523 15.4477 16 16 16C16.5523 16 17 15.5523 17 15ZM16 6C14.3431 6 13 7.34315 13 9V15C13 16.6569 14.3431 18 16 18C17.6569 18 19 16.6569 19 15V9C19 7.34315 17.6569 6 16 6Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    Pause_default = Pause;
+  }
+});
+
+// icons/Play.ts
+var Play_exports = {};
+__export(Play_exports, {
+  default: () => Play_default
+});
+var Play, Play_default;
+var init_Play = __esm({
+  "icons/Play.ts"() {
+    "use strict";
+    Play = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M6 15.3006V8.69963C6 6.41217 8.45734 4.96627 10.4569 6.07716L16.3978 9.37764C18.4552 10.5207 18.4552 13.4796 16.3978 14.6226L10.4569 17.9231C8.45734 19.034 6 17.5881 6 15.3006ZM8 15.3006V8.69963C8 7.93714 8.81911 7.45518 9.48564 7.82547L15.4265 11.126C16.1123 11.507 16.1123 12.4933 15.4265 12.8743L9.48564 16.1748C8.81911 16.5451 8 16.0631 8 15.3006Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    Play_default = Play;
+  }
+});
+
+// icons/PlaySquare.ts
+var PlaySquare_exports = {};
+__export(PlaySquare_exports, {
+  default: () => PlaySquare_default
+});
+var PlaySquare, PlaySquare_default;
+var init_PlaySquare = __esm({
+  "icons/PlaySquare.ts"() {
+    "use strict";
+    PlaySquare = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M8 10.4656V13.5344C8 15.6412 10.2299 16.4543 11.6609 15.7205L14.6534 14.1861C16.4489 13.2655 16.4488 10.7345 14.6534 9.81391L11.6609 8.27949C10.2299 7.54573 8 8.3588 8 10.4656ZM10 13.5344C10 13.8889 10.4126 14.113 10.7484 13.9408L13.7409 12.4064C14.0864 12.2293 14.0864 11.7707 13.7409 11.5936L10.7484 10.0592C10.4126 9.88702 10 10.1111 10 10.4656V13.5344Z" fill="#414042"/>
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M7 2C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2H7ZM4 7C4 5.34315 5.34315 4 7 4H17C18.6569 4 20 5.34315 20 7V17C20 18.6569 18.6569 20 17 20H7C5.34315 20 4 18.6569 4 17V7Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    PlaySquare_default = PlaySquare;
+  }
+});
+
+// icons/RadioButton.ts
+var RadioButton_exports = {};
+__export(RadioButton_exports, {
+  default: () => RadioButton_default
+});
+var RadioButton, RadioButton_default;
+var init_RadioButton = __esm({
+  "icons/RadioButton.ts"() {
+    "use strict";
+    RadioButton = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  d="M12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z" fill="#414042"/>
+<path style="${this.colorStyle}"  d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    RadioButton_default = RadioButton;
+  }
+});
+
+// icons/Resume.ts
+var Resume_exports = {};
+__export(Resume_exports, {
+  default: () => Resume_default
+});
+var Resume, Resume_default;
+var init_Resume = __esm({
+  "icons/Resume.ts"() {
+    "use strict";
+    Resume = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M8.6 4C7.16329 4 6 5.16328 6 6.6V17.4C6 18.8367 7.16329 20 8.6 20H15.98C17.4167 20 18.58 18.8367 18.58 17.4V8.247C18.58 8.04089 18.5004 7.84362 18.3419 7.68511L14.8855 4.22868C14.7453 4.08473 14.5468 4 14.333 4H8.6ZM4 6.6C4 4.05872 6.05872 2 8.6 2H14.333C15.0707 2 15.7879 2.29141 16.3133 2.82806L19.7561 6.27089C20.2816 6.79638 20.58 7.49911 20.58 8.247V17.4C20.58 19.9413 18.5213 22 15.98 22H8.6C6.05872 22 4 19.9413 4 17.4V6.6Z" fill="#414042"/>
+<path style="${this.colorStyle}"  d="M14.4043 3V6.825C14.4043 7.815 15.2143 8.625 16.2043 8.625H19.8043L14.4043 3Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    Resume_default = Resume;
+  }
+});
+
+// icons/Rewind.ts
+var Rewind_exports = {};
+__export(Rewind_exports, {
+  default: () => Rewind_default
+});
+var Rewind, Rewind_default;
+var init_Rewind = __esm({
+  "icons/Rewind.ts"() {
+    "use strict";
+    Rewind = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M21.082 9.40789L21.082 14.2609C21.082 16.3464 18.8416 17.6647 17.0185 16.6519L12.6508 14.2254C10.775 13.1832 10.775 10.4855 12.6508 9.44339L17.0185 7.0169C18.8416 6.00408 21.082 7.32234 21.082 9.40789ZM19.082 9.40789L19.082 14.2609C19.082 14.8214 18.4798 15.1758 17.9898 14.9035L13.6221 12.4771C13.1179 12.1969 13.1179 11.4718 13.6221 11.1917L17.9898 8.76521C18.4798 8.49298 19.082 8.84731 19.082 9.40789Z" fill="#414042"/>
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M12.8379 9.40789L12.8379 14.2609C12.8379 16.3464 10.5975 17.6647 8.77437 16.6519L4.40669 14.2254C2.53087 13.1832 2.53086 10.4855 4.40669 9.44339L8.77437 7.0169C10.5975 6.00408 12.8379 7.32234 12.8379 9.40789ZM10.8379 9.40789L10.8379 14.2609C10.8379 14.8214 10.2357 15.1758 9.74566 14.9035L5.37797 12.4771C4.87377 12.1969 4.87377 11.4718 5.37797 11.1917L9.74566 8.76521C10.2357 8.49298 10.8379 8.84731 10.8379 9.40789Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    Rewind_default = Rewind;
+  }
+});
+
+// icons/Search.ts
+var Search_exports = {};
+__export(Search_exports, {
+  default: () => Search_default
+});
+var Search, Search_default;
+var init_Search = __esm({
+  "icons/Search.ts"() {
+    "use strict";
+    Search = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M4 11C4 7.13401 7.13401 4 11 4C14.866 4 18 7.13401 18 11C18 14.866 14.866 18 11 18C7.13401 18 4 14.866 4 11ZM11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C13.125 20 15.078 19.2635 16.6177 18.0319L20.2929 21.7071C20.6834 22.0976 21.3166 22.0976 21.7071 21.7071C22.0976 21.3166 22.0976 20.6834 21.7071 20.2929L18.0319 16.6177C19.2635 15.078 20 13.125 20 11C20 6.02944 15.9706 2 11 2Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    Search_default = Search;
+  }
+});
+
+// icons/ShortAnswer.ts
+var ShortAnswer_exports = {};
+__export(ShortAnswer_exports, {
+  default: () => ShortAnswer_default
+});
+var ShortAnswer, ShortAnswer_default;
+var init_ShortAnswer = __esm({
+  "icons/ShortAnswer.ts"() {
+    "use strict";
+    ShortAnswer = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  d="M22 22L19.1 19.04C20.89 17.23 22 14.75 22 12C22 6.48 17.52 2 12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C12.06 22 12.12 21.99 12.17 21.99L12.16 22H22ZM4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20C7.59 20 4 16.41 4 12Z" fill="#414042"/>
+<path style="${this.colorStyle}"  d="M14.2899 16H16.3299L13.2299 7H10.7799L7.66992 16H9.70992L10.3799 13.95H13.6299L14.2899 16ZM10.8599 12.46L11.9699 9.05H12.0399L13.1499 12.46H10.8599Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    ShortAnswer_default = ShortAnswer;
+  }
+});
+
+// icons/SortBy.ts
+var SortBy_exports = {};
+__export(SortBy_exports, {
+  default: () => SortBy_default
+});
+var SortBy, SortBy_default;
+var init_SortBy = __esm({
+  "icons/SortBy.ts"() {
+    "use strict";
+    SortBy = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M8 4C7.44772 4 7 4.43642 7 4.97477L7 16.2682L4.70711 14.0332C4.31658 13.6525 3.68342 13.6525 3.29289 14.0332C2.90237 14.4138 2.90237 15.031 3.29289 15.4117L7.30199 19.3196C7.69034 19.6982 8.30966 19.6982 8.69802 19.3196L12.7071 15.4117C13.0976 15.031 13.0976 14.4138 12.7071 14.0332C12.3166 13.6525 11.6834 13.6525 11.2929 14.0332L9 16.2682L9 4.97477C9 4.43642 8.55228 4 8 4Z" fill="#414042"/>
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M16 20.4141C16.5523 20.4141 17 19.9776 17 19.4393L17 8.14588L19.2929 10.3809C19.6834 10.7616 20.3166 10.7616 20.7071 10.3809C21.0976 10.0002 21.0976 9.38306 20.7071 9.00239L16.698 5.09446C16.3097 4.71591 15.6903 4.71591 15.302 5.09446L11.2929 9.00239C10.9024 9.38305 10.9024 10.0002 11.2929 10.3809C11.6834 10.7616 12.3166 10.7616 12.7071 10.3809L15 8.14588L15 19.4393C15 19.9776 15.4477 20.4141 16 20.4141Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    SortBy_default = SortBy;
+  }
+});
+
+// icons/Stop.ts
+var Stop_exports = {};
+__export(Stop_exports, {
+  default: () => Stop_default
+});
+var Stop, Stop_default;
+var init_Stop = __esm({
+  "icons/Stop.ts"() {
+    "use strict";
+    Stop = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M10 6H14C16.2091 6 18 7.79086 18 10V14C18 16.2091 16.2091 18 14 18H10C7.79086 18 6 16.2091 6 14V10C6 7.79086 7.79086 6 10 6ZM10 8C8.89543 8 8 8.89543 8 10V14C8 15.1046 8.89543 16 10 16H14C15.1046 16 16 15.1046 16 14V10C16 8.89543 15.1046 8 14 8H10Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    Stop_default = Stop;
+  }
+});
+
+// icons/SubSquare.ts
+var SubSquare_exports = {};
+__export(SubSquare_exports, {
+  default: () => SubSquare_default
+});
+var SubSquare, SubSquare_default;
+var init_SubSquare = __esm({
+  "icons/SubSquare.ts"() {
+    "use strict";
+    SubSquare = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  d="M15 12H9M17 21H7C4.79086 21 3 19.2091 3 17V7C3 4.79086 4.79086 3 7 3H17C19.2091 3 21 4.79086 21 7V17C21 19.2091 19.2091 21 17 21Z" stroke="#414042" stroke-width="2" stroke-linecap="round"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    SubSquare_default = SubSquare;
+  }
+});
+
+// icons/Tablet.ts
+var Tablet_exports = {};
+__export(Tablet_exports, {
+  default: () => Tablet_default
+});
+var Tablet, Tablet_default;
+var init_Tablet = __esm({
+  "icons/Tablet.ts"() {
+    "use strict";
+    Tablet = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  d="M9 17C8.44772 17 8 17.4477 8 18C8 18.5523 8.44772 19 9 19H15C15.5523 19 16 18.5523 16 18C16 17.4477 15.5523 17 15 17H9Z" fill="#414042"/>
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M7 2C5.34315 2 4 3.34315 4 5V19C4 20.6569 5.34315 22 7 22H17C18.6569 22 20 20.6569 20 19V5C20 3.34315 18.6569 2 17 2H7ZM6 5C6 4.44772 6.44772 4 7 4H17C17.5523 4 18 4.44772 18 5V19C18 19.5523 17.5523 20 17 20H7C6.44772 20 6 19.5523 6 19V5Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    Tablet_default = Tablet;
+  }
+});
+
+// icons/TextFiles.ts
+var TextFiles_exports = {};
+__export(TextFiles_exports, {
+  default: () => TextFiles_default
+});
+var TextFiles, TextFiles_default;
+var init_TextFiles = __esm({
+  "icons/TextFiles.ts"() {
+    "use strict";
+    TextFiles = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  d="M7 7C6.44772 7 6 7.44772 6 8C6 8.55228 6.44772 9 7 9H13C13.5523 9 14 8.55228 14 8C14 7.44772 13.5523 7 13 7H7Z" fill="#414042"/>
+<path style="${this.colorStyle}"  d="M6 12C6 11.4477 6.44772 11 7 11H13C13.5523 11 14 11.4477 14 12C14 12.5523 13.5523 13 13 13H7C6.44772 13 6 12.5523 6 12Z" fill="#414042"/>
+<path style="${this.colorStyle}"  d="M7 15C6.44772 15 6 15.4477 6 16C6 16.5523 6.44772 17 7 17H13C13.5523 17 14 16.5523 14 16C14 15.4477 13.5523 15 13 15H7Z" fill="#414042"/>
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M5.625 3H7.03369C7.71014 2.37135 8.6473 2 9.62497 2H18.375C20.263 2 22 3.38491 22 5.33333V14.6667C22 16.6151 20.263 18 18.375 18H17.94C17.631 19.697 16.1637 21 14.375 21H5.625C3.60818 21 2 19.3435 2 17.3333V6.66667C2 4.65653 3.60818 3 5.625 3ZM18.375 16H18V6.66667C18 5.62093 17.5648 4.67089 16.8632 4H18.375C19.3864 4 20 4.70443 20 5.33333V14.6667C20 15.2956 19.3864 16 18.375 16ZM5.625 5C4.74233 5 4 5.73129 4 6.66667V17.3333C4 18.2687 4.74233 19 5.625 19H14.375C15.2577 19 16 18.2687 16 17.3333V6.66667C16 5.73129 15.2577 5 14.375 5H5.625Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    TextFiles_default = TextFiles;
+  }
+});
+
+// icons/Time.ts
+var Time_exports = {};
+__export(Time_exports, {
+  default: () => Time_default
+});
+var Time, Time_default;
+var init_Time = __esm({
+  "icons/Time.ts"() {
+    "use strict";
+    Time = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M12 7C12.5523 7 13 7.44772 13 8V11.5858L15.7071 14.2929C16.0976 14.6834 16.0976 15.3166 15.7071 15.7071C15.3166 16.0976 14.6834 16.0976 14.2929 15.7071L11 12.4142V8C11 7.44772 11.4477 7 12 7Z" fill="#414042"/>
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4ZM2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    Time_default = Time;
+  }
+});
+
+// icons/TurnLeft.ts
+var TurnLeft_exports = {};
+__export(TurnLeft_exports, {
+  default: () => TurnLeft_default
+});
+var TurnLeft, TurnLeft_default;
+var init_TurnLeft = __esm({
+  "icons/TurnLeft.ts"() {
+    "use strict";
+    TurnLeft = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M9.70711 3.29289C9.31658 2.90237 8.68342 2.90237 8.29289 3.29289L4.29289 7.29289C3.90237 7.68342 3.90237 8.31658 4.29289 8.70711L8.29289 12.7071C8.68342 13.0976 9.31658 13.0976 9.70711 12.7071C10.0976 12.3166 10.0976 11.6834 9.70711 11.2929L6.41421 8L9.70711 4.70711C10.0976 4.31658 10.0976 3.68342 9.70711 3.29289Z" fill="#414042"/>
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M20 11C20 8.79086 18.2091 7 16 7H5C4.44771 7 4 7.44772 4 8C4 8.55228 4.44771 9 5 9H16C17.1046 9 18 9.89543 18 11V20C18 20.5523 18.4477 21 19 21C19.5523 21 20 20.5523 20 20V11Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    TurnLeft_default = TurnLeft;
+  }
+});
+
+// icons/TurnRight.ts
+var TurnRight_exports = {};
+__export(TurnRight_exports, {
+  default: () => TurnRight_default
+});
+var TurnRight, TurnRight_default;
+var init_TurnRight = __esm({
+  "icons/TurnRight.ts"() {
+    "use strict";
+    TurnRight = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M14.2929 3.29289C14.6834 2.90237 15.3166 2.90237 15.7071 3.29289L19.7071 7.29289C20.0976 7.68342 20.0976 8.31658 19.7071 8.70711L15.7071 12.7071C15.3166 13.0976 14.6834 13.0976 14.2929 12.7071C13.9024 12.3166 13.9024 11.6834 14.2929 11.2929L17.5858 8L14.2929 4.70711C13.9024 4.31658 13.9024 3.68342 14.2929 3.29289Z" fill="#414042"/>
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M4 11C4 8.79086 5.79086 7 8 7H19C19.5523 7 20 7.44772 20 8C20 8.55228 19.5523 9 19 9H8C6.89543 9 6 9.89543 6 11V20C6 20.5523 5.55228 21 5 21C4.44772 21 4 20.5523 4 20V11Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    TurnRight_default = TurnRight;
+  }
+});
+
+// icons/UploadFile.ts
+var UploadFile_exports = {};
+__export(UploadFile_exports, {
+  default: () => UploadFile_default
+});
+var UploadFile, UploadFile_default;
+var init_UploadFile = __esm({
+  "icons/UploadFile.ts"() {
+    "use strict";
+    UploadFile = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  d="M19.91 6.31L16.43 2.83C15.89 2.29 15.19 2 14.43 2H8.64C6.08 2 4 4.08 4 6.64V17.56C4 20.12 6.08 22.2 8.64 22.2H16.1C18.66 22.2 20.74 20.12 20.74 17.56V8.3C20.73 7.56 20.43 6.83 19.91 6.31ZM16.1 20.19H8.64C7.18 20.19 6 19.01 6 17.55V6.64C6 5.18 7.18 4 8.64 4H14.43C14.45 4 14.48 4.01 14.5 4.01V6.86C14.5 7.86 15.31 8.68 16.32 8.68H18.73V17.55C18.73 19.01 17.55 20.19 16.1 20.19Z" fill="#414042"/>
+<path style="${this.colorStyle}"  d="M11.3604 17.0901C11.3604 17.6501 11.8104 18.1001 12.3704 18.1001C12.9304 18.1001 13.3804 17.6501 13.3804 17.0901V12.7501C13.4904 12.8401 13.6004 12.9301 13.7004 13.0101C14.0104 13.2601 14.2904 13.4701 14.4804 13.6101C14.5804 13.6801 14.6604 13.7401 14.7104 13.7801L14.7704 13.8301L14.7904 13.8401H14.8004C15.2504 14.1701 15.8804 14.0701 16.2104 13.6201C16.5404 13.1701 16.4404 12.5401 15.9904 12.2101L15.9804 12.2001L15.9204 12.1601C15.8704 12.1201 15.8004 12.0701 15.7004 12.0001C15.5104 11.8601 15.2504 11.6601 14.9604 11.4301C14.3604 10.9601 13.6404 10.3601 13.1004 9.8101L12.3704 9.1001L11.6604 9.8101C11.1104 10.3601 10.3904 10.9601 9.79043 11.4301C9.50043 11.6601 9.24043 11.8601 9.05043 12.0001C8.96043 12.0701 8.88043 12.1201 8.83043 12.1601L8.77043 12.2001L8.76043 12.2101C8.31043 12.5401 8.21043 13.1701 8.54043 13.6201C8.87043 14.0701 9.50043 14.1701 9.95043 13.8401L9.97043 13.8301L10.0304 13.7801C10.0804 13.7401 10.1604 13.6801 10.2604 13.6101C10.4604 13.4601 10.7304 13.2501 11.0404 13.0101C11.1404 12.9301 11.2504 12.8401 11.3604 12.7501V17.0901Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    UploadFile_default = UploadFile;
+  }
+});
+
 // icons/Verified.ts
 var Verified_exports = {};
 __export(Verified_exports, {
@@ -368,6 +3261,413 @@ var init_Verified = __esm({
       }
     };
     Verified_default = Verified;
+  }
+});
+
+// icons/Video.ts
+var Video_exports = {};
+__export(Video_exports, {
+  default: () => Video_default
+});
+var Video, Video_default;
+var init_Video = __esm({
+  "icons/Video.ts"() {
+    "use strict";
+    Video = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M2 9C2 6.79086 3.79086 5 6 5H13C15.2091 5 17 6.79086 17 9V9.07171L20.202 7.23108C21.0019 6.77121 22 7.34868 22 8.27144V15.7488C22 16.6203 21.1003 17.2012 20.306 16.8424L16.9855 15.3425C16.8118 17.3913 15.0938 19 13 19H6C3.79086 19 2 17.2091 2 15V9ZM17 13.1544L20 14.5096V9.65407L17 11.3786V13.1544ZM15 9C15 7.89543 14.1046 7 13 7H6C4.89543 7 4 7.89543 4 9V15C4 16.1046 4.89543 17 6 17H13C14.1046 17 15 16.1046 15 15V9Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    Video_default = Video;
+  }
+});
+
+// icons/VideoOff.ts
+var VideoOff_exports = {};
+__export(VideoOff_exports, {
+  default: () => VideoOff_default
+});
+var VideoOff, VideoOff_default;
+var init_VideoOff = __esm({
+  "icons/VideoOff.ts"() {
+    "use strict";
+    VideoOff = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  d="M20.7071 4.70711C21.0976 4.31658 21.0976 3.68342 20.7071 3.29289C20.3166 2.90237 19.6834 2.90237 19.2929 3.29289L3.29289 19.2929C2.90237 19.6834 2.90237 20.3166 3.29289 20.7071C3.68342 21.0976 4.31658 21.0976 4.70711 20.7071L20.7071 4.70711Z" fill="#414042"/>
+<path style="${this.colorStyle}"  d="M13 5C13.8933 5 14.7181 5.29281 15.3839 5.78768L13.9383 7.2333C13.6585 7.08438 13.3391 7 13 7H6C4.89543 7 4 7.89543 4 9V15C4 15.5959 4.26065 16.131 4.67416 16.4974L3.25865 17.9129C2.48379 17.1834 2 16.1482 2 15V9C2 6.79086 3.79086 5 6 5H13Z" fill="#414042"/>
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M13 17H9.82843L7.82843 19H13C15.0938 19 16.8118 17.3913 16.9855 15.3425L20.306 16.8424C21.1003 17.2012 22 16.6203 22 15.7488V8.27144C22 7.34868 21.0019 6.77121 20.202 7.23108L18.7799 8.04856L15 11.8284V15C15 16.1046 14.1046 17 13 17ZM17 13.1544L20 14.5096V9.65407L17 11.3786V13.1544Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    VideoOff_default = VideoOff;
+  }
+});
+
+// icons/Visibility.ts
+var Visibility_exports = {};
+__export(Visibility_exports, {
+  default: () => Visibility_default
+});
+var Visibility, Visibility_default;
+var init_Visibility = __esm({
+  "icons/Visibility.ts"() {
+    "use strict";
+    Visibility = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9ZM11 12C11 11.4477 11.4477 11 12 11C12.5523 11 13 11.4477 13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12Z" fill="#414042"/>
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M21.83 11.2807C19.542 7.15186 15.8122 5 12 5C8.18777 5 4.45796 7.15186 2.17003 11.2807C1.94637 11.6844 1.94361 12.1821 2.16029 12.5876C4.41183 16.8013 8.1628 19 12 19C15.8372 19 19.5882 16.8013 21.8397 12.5876C22.0564 12.1821 22.0536 11.6844 21.83 11.2807ZM12 17C9.06097 17 6.04052 15.3724 4.09173 11.9487C6.06862 8.59614 9.07319 7 12 7C14.9268 7 17.9314 8.59614 19.9083 11.9487C17.9595 15.3724 14.939 17 12 17Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    Visibility_default = Visibility;
+  }
+});
+
+// icons/VisibilityOff.ts
+var VisibilityOff_exports = {};
+__export(VisibilityOff_exports, {
+  default: () => VisibilityOff_default
+});
+var VisibilityOff, VisibilityOff_default;
+var init_VisibilityOff = __esm({
+  "icons/VisibilityOff.ts"() {
+    "use strict";
+    VisibilityOff = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M3.29289 2.29289C3.68342 1.90237 4.31658 1.90237 4.70711 2.29289L21.2071 18.7929C21.5976 19.1834 21.5976 19.8166 21.2071 20.2071C20.8166 20.5976 20.1834 20.5976 19.7929 20.2071L3.29289 3.70711C2.90237 3.31658 2.90237 2.68342 3.29289 2.29289Z" fill="#414042"/>
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M7.58952 6.00374C5.45704 7.01693 3.55091 8.78875 2.17003 11.2807C1.94637 11.6844 1.94361 12.1821 2.16029 12.5876C4.41183 16.8013 8.1628 19 12 19C14.2453 19 16.4611 18.2472 18.3642 16.7784L16.936 15.3502C15.4103 16.4608 13.6917 17 12 17C9.06097 17 6.04052 15.3724 4.09173 11.9487C5.41562 9.70355 7.20038 8.24612 9.11403 7.52825L7.58952 6.00374ZM18.4241 14.0099C18.9653 13.4146 19.4646 12.7282 19.9083 11.9487C17.9314 8.59614 14.9268 7 12 7C11.8116 7 11.6229 7.00661 11.4341 7.01989L9.68278 5.26857C10.444 5.09002 11.2203 5 12 5C15.8122 5 19.542 7.15186 21.83 11.2807C22.0536 11.6844 22.0564 12.1821 21.8397 12.5876C21.2632 13.6665 20.5884 14.6133 19.8391 15.4249L18.4241 14.0099ZM10.8247 9.23895C9.752 9.69615 9 10.7603 9 12C9 13.6569 10.3431 15 12 15C13.2397 15 14.3038 14.248 14.761 13.1753L10.8247 9.23895ZM12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    VisibilityOff_default = VisibilityOff;
+  }
+});
+
+// icons/Volume.ts
+var Volume_exports = {};
+__export(Volume_exports, {
+  default: () => Volume_default
+});
+var Volume, Volume_default;
+var init_Volume = __esm({
+  "icons/Volume.ts"() {
+    "use strict";
+    Volume = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M16 7.20253C16 6.77861 15.5056 6.54703 15.1799 6.81842L12.0574 9.42052C11.6081 9.79493 11.0418 9.99997 10.4569 9.99997H8.5C8.22386 9.99997 8 10.2238 8 10.5V13.5C8 13.7761 8.22386 14 8.5 14H10.4569C11.0418 14 11.6081 14.205 12.0574 14.5794L15.1799 17.1815C15.5056 17.4529 16 17.2213 16 16.7974V7.20253ZM13.8995 5.28198C15.5279 3.92505 18 5.08294 18 7.20253V16.7974C18 18.917 15.5279 20.0749 13.8995 18.718L10.777 16.1159C10.6872 16.041 10.5739 16 10.4569 16H8.5C7.11929 16 6 14.8807 6 13.5V10.5C6 9.11926 7.11929 7.99997 8.5 7.99997H10.4569C10.5739 7.99997 10.6872 7.95896 10.777 7.88408L13.8995 5.28198Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    Volume_default = Volume;
+  }
+});
+
+// icons/VolumeDown.ts
+var VolumeDown_exports = {};
+__export(VolumeDown_exports, {
+  default: () => VolumeDown_default
+});
+var VolumeDown, VolumeDown_default;
+var init_VolumeDown = __esm({
+  "icons/VolumeDown.ts"() {
+    "use strict";
+    VolumeDown = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M17.4454 8.16806C17.9049 7.8617 18.5258 7.98588 18.8322 8.44541C20.2672 10.598 20.2672 13.4023 18.8322 15.5548C18.5258 16.0143 17.9049 16.1385 17.4454 15.8322C16.9859 15.5258 16.8617 14.9049 17.1681 14.4454C18.1552 12.9647 18.1552 11.0356 17.1681 9.55481C16.8617 9.09528 16.9859 8.47441 17.4454 8.16806Z" fill="#414042"/>
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M13 7.20253C13 6.77861 12.5056 6.54703 12.1799 6.81842L9.05739 9.42052C8.6081 9.79493 8.04177 9.99997 7.45693 9.99997H5.5C5.22386 9.99997 5 10.2238 5 10.5V13.5C5 13.7761 5.22386 14 5.5 14H7.45693C8.04177 14 8.6081 14.205 9.05739 14.5794L12.1799 17.1815C12.5056 17.4529 13 17.2213 13 16.7974V7.20253ZM10.8995 5.28198C12.5279 3.92505 15 5.08294 15 7.20253V16.7974C15 18.917 12.5279 20.0749 10.8995 18.718L7.77702 16.1159C7.68716 16.041 7.57389 16 7.45693 16H5.5C4.11929 16 3 14.8807 3 13.5V10.5C3 9.11926 4.11929 7.99997 5.5 7.99997H7.45693C7.57389 7.99997 7.68716 7.95896 7.77702 7.88408L10.8995 5.28198Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    VolumeDown_default = VolumeDown;
+  }
+});
+
+// icons/VolumeUp.ts
+var VolumeUp_exports = {};
+__export(VolumeUp_exports, {
+  default: () => VolumeUp_default
+});
+var VolumeUp, VolumeUp_default;
+var init_VolumeUp = __esm({
+  "icons/VolumeUp.ts"() {
+    "use strict";
+    VolumeUp = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M15.4454 8.16806C15.9049 7.8617 16.5258 7.98588 16.8322 8.44541C18.2672 10.598 18.2672 13.4023 16.8322 15.5548C16.5258 16.0143 15.9049 16.1385 15.4454 15.8322C14.9859 15.5258 14.8617 14.9049 15.1681 14.4454C16.1552 12.9647 16.1552 11.0356 15.1681 9.55481C14.8617 9.09528 14.9859 8.47441 15.4454 8.16806Z" fill="#414042"/>
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M19.553 7.1053C20.047 6.85831 20.6477 7.05854 20.8946 7.55252C22.2944 10.3521 22.2944 13.6474 20.8946 16.4469C20.6477 16.9409 20.047 17.1411 19.553 16.8942C19.059 16.6472 18.8588 16.0465 19.1058 15.5525C20.2241 13.316 20.2241 10.6835 19.1058 8.44694C18.8588 7.95297 19.059 7.35229 19.553 7.1053Z" fill="#414042"/>
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M12 7.20253C12 6.77861 11.5056 6.54703 11.1799 6.81842L8.05739 9.42052C7.6081 9.79493 7.04177 9.99997 6.45693 9.99997H4.5C4.22386 9.99997 4 10.2238 4 10.5V13.5C4 13.7761 4.22386 14 4.5 14H6.45693C7.04177 14 7.6081 14.205 8.05739 14.5794L11.1799 17.1815C11.5056 17.4529 12 17.2213 12 16.7974V7.20253ZM9.89954 5.28198C11.5279 3.92505 14 5.08294 14 7.20253V16.7974C14 18.917 11.5279 20.0749 9.89954 18.718L6.77702 16.1159C6.68716 16.041 6.57389 16 6.45693 16H4.5C3.11929 16 2 14.8807 2 13.5V10.5C2 9.11926 3.11929 7.99997 4.5 7.99997H6.45693C6.57389 7.99997 6.68716 7.95896 6.77702 7.88408L9.89954 5.28198Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    VolumeUp_default = VolumeUp;
+  }
+});
+
+// icons/Warning.ts
+var Warning_exports = {};
+__export(Warning_exports, {
+  default: () => Warning_default
+});
+var Warning, Warning_default;
+var init_Warning = __esm({
+  "icons/Warning.ts"() {
+    "use strict";
+    Warning = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  d="M2.88648 18.493C2.49435 19.1596 2.975 20 3.74842 20H20.2516C21.025 20 21.5057 19.1596 21.1135 18.493L12.8619 4.46529C12.4753 3.80798 11.5247 3.80798 11.1381 4.46529L2.88648 18.493ZM5.15455 18.2105L12 6.57L18.8455 18.2105H5.15455ZM11.0909 16.4211C11.0909 15.9269 11.4915 15.5263 11.9856 15.5263H12.0144C12.5085 15.5263 12.9091 15.9269 12.9091 16.4211C12.9091 16.9152 12.5085 17.3158 12.0144 17.3158H11.9856C11.4915 17.3158 11.0909 16.9152 11.0909 16.4211ZM11.0909 11.067C11.0909 10.5649 11.4979 10.1579 12 10.1579C12.5021 10.1579 12.9091 10.5649 12.9091 11.067V12.8278C12.9091 13.3298 12.5021 13.7368 12 13.7368C11.4979 13.7368 11.0909 13.3298 11.0909 12.8278V11.067Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    Warning_default = Warning;
   }
 });
 
@@ -427,6 +3727,113 @@ var init_Whatsapp = __esm({
       }
     };
     Whatsapp_default = Whatsapp;
+  }
+});
+
+// icons/Wifi.ts
+var Wifi_exports = {};
+__export(Wifi_exports, {
+  default: () => Wifi_default
+});
+var Wifi, Wifi_default;
+var init_Wifi = __esm({
+  "icons/Wifi.ts"() {
+    "use strict";
+    Wifi = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M11.965 6.50746C8.77717 6.50746 5.87088 7.70344 3.6659 9.67307C3.25387 10.0411 2.62172 10.0052 2.25396 9.59284C1.8862 9.18047 1.92209 8.54782 2.33412 8.17977C4.89139 5.89545 8.26722 4.50586 11.965 4.50586C15.6992 4.50586 19.105 5.92296 21.6711 8.24748C22.0805 8.61839 22.112 9.25128 21.7414 9.66107C21.3708 10.0709 20.7384 10.1024 20.3289 9.73146C18.1162 7.72708 15.1841 6.50746 11.965 6.50746Z" fill="#414042"/>
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M11.9648 10.1705C9.63732 10.1705 7.52257 11.0726 5.94699 12.5484C5.54376 12.926 4.91094 12.9051 4.53355 12.5015C4.15617 12.098 4.17712 11.4646 4.58036 11.0869C6.51178 9.2779 9.10999 8.16895 11.9648 8.16895C14.8196 8.16895 17.4178 9.2779 19.3492 11.0869C19.7525 11.4646 19.7734 12.098 19.396 12.5015C19.0186 12.9051 18.3858 12.926 17.9826 12.5484C16.407 11.0726 14.2923 10.1705 11.9648 10.1705Z" fill="#414042"/>
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M11.964 13.8766C10.5678 13.8766 9.30414 14.4362 8.38145 15.3458C7.988 15.7337 7.35485 15.729 6.96728 15.3352C6.57971 14.9414 6.58447 14.3078 6.97792 13.9199C8.25957 12.6564 10.0216 11.875 11.964 11.875C13.9065 11.875 15.6685 12.6564 16.9502 13.9199C17.3436 14.3078 17.3484 14.9414 16.9608 15.3352C16.5732 15.729 15.9401 15.7337 15.5466 15.3458C14.6239 14.4362 13.3603 13.8766 11.964 13.8766Z" fill="#414042"/>
+<path style="${this.colorStyle}"  d="M13.5289 17.9404C13.5289 17.0758 12.8285 16.3749 11.9646 16.3749C11.1007 16.3749 10.4004 17.0758 10.4004 17.9404C10.4004 18.805 11.1007 19.5059 11.9646 19.5059C12.8285 19.5059 13.5289 18.805 13.5289 17.9404Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    Wifi_default = Wifi;
+  }
+});
+
+// icons/WifiOff.ts
+var WifiOff_exports = {};
+__export(WifiOff_exports, {
+  default: () => WifiOff_default
+});
+var WifiOff, WifiOff_default;
+var init_WifiOff = __esm({
+  "icons/WifiOff.ts"() {
+    "use strict";
+    WifiOff = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M10.6156 12.0172C11.0746 11.924 11.5496 11.875 12.036 11.875C13.9784 11.875 15.7404 12.6564 17.0221 13.9199C17.4155 14.3078 17.4203 14.9414 17.0327 15.3352C16.6451 15.729 16.012 15.7337 15.6185 15.3458C14.7982 14.5371 13.7084 14.0051 12.4955 13.897L10.6156 12.0172ZM10.0481 14.2781C9.44989 14.5314 8.9099 14.8958 8.45338 15.3458C8.05993 15.7337 7.42678 15.729 7.03921 15.3352C6.65163 14.9414 6.6564 14.3078 7.04985 13.9199C7.49737 13.4787 8.00346 13.0963 8.55535 12.7854L10.0481 14.2781Z" fill="#414042"/>
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M7.68103 9.08279C9.01324 8.49532 10.4865 8.16895 12.0352 8.16895C14.89 8.16895 17.4882 9.2779 19.4196 11.0869C19.8229 11.4646 19.8438 12.098 19.4664 12.5015C19.0891 12.9051 18.4562 12.926 18.053 12.5484C16.4774 11.0726 14.3627 10.1705 12.0352 10.1705C11.0528 10.1705 10.1083 10.3313 9.22629 10.628L7.68103 9.08279ZM7.31279 11.5429C6.84996 11.8377 6.41639 12.1747 6.0174 12.5484C5.61417 12.926 4.98135 12.9051 4.60396 12.5015C4.22658 12.098 4.24754 11.4646 4.65077 11.0869C5.03222 10.7297 5.43967 10.3997 5.86997 10.1002L7.31279 11.5429Z" fill="#414042"/>
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M4.95396 6.35588C7.0472 5.17804 9.46324 4.50586 12.035 4.50586C15.7328 4.50586 19.1086 5.89545 21.6659 8.17977C22.0779 8.54782 22.1138 9.18047 21.746 9.59284C21.3783 10.0052 20.7461 10.0411 20.3341 9.67307C18.1291 7.70344 15.2228 6.50746 12.035 6.50746C10.0198 6.50746 8.11704 6.98543 6.43284 7.83468L4.95396 6.35588ZM4.67906 8.90934C4.32877 9.16595 3.99233 9.44044 3.67105 9.73146C3.26159 10.1024 2.62921 10.0709 2.25859 9.66107C1.88797 9.25128 1.91946 8.61839 2.32893 8.24748C2.62494 7.97933 2.93212 7.72327 3.24969 7.48006L4.67906 8.90934Z" fill="#414042"/>
+<path style="${this.colorStyle}"  d="M10.4711 17.9404C10.4711 17.0758 11.1715 16.3749 12.0354 16.3749C12.8993 16.3749 13.5996 17.0758 13.5996 17.9404C13.5996 18.805 12.8993 19.5059 12.0354 19.5059C11.1715 19.5059 10.4711 18.805 10.4711 17.9404Z" fill="#414042"/>
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M3.29287 3.29291C2.90236 3.68345 2.90238 4.31661 3.29291 4.70713L19.2929 20.7062C19.6834 21.0968 20.3166 21.0967 20.7071 20.7062C21.0976 20.3157 21.0976 19.6825 20.7071 19.292L4.70709 3.29287C4.31655 2.90236 3.68339 2.90238 3.29287 3.29291Z" fill="#414042"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    WifiOff_default = WifiOff;
   }
 });
 
@@ -676,14 +4083,81 @@ var init_DuplicateItem = __esm({
 });
 
 // index.ts
+window.customElements.define("talentics-icons-add", (init_Add(), __toCommonJS(Add_exports)).default);
+window.customElements.define("talentics-icons-add-square", (init_AddSquare(), __toCommonJS(AddSquare_exports)).default);
+window.customElements.define("talentics-icons-arrow-down", (init_ArrowDown(), __toCommonJS(ArrowDown_exports)).default);
+window.customElements.define("talentics-icons-arrow-left", (init_ArrowLeft(), __toCommonJS(ArrowLeft_exports)).default);
+window.customElements.define("talentics-icons-arrow-right", (init_ArrowRight(), __toCommonJS(ArrowRight_exports)).default);
+window.customElements.define("talentics-icons-arrow-up", (init_ArrowUp(), __toCommonJS(ArrowUp_exports)).default);
+window.customElements.define("talentics-icons-back-left", (init_BackLeft(), __toCommonJS(BackLeft_exports)).default);
+window.customElements.define("talentics-icons-back-right", (init_BackRight(), __toCommonJS(BackRight_exports)).default);
+window.customElements.define("talentics-icons-bluetooth", (init_Bluetooth(), __toCommonJS(Bluetooth_exports)).default);
+window.customElements.define("talentics-icons-calendar", (init_Calendar(), __toCommonJS(Calendar_exports)).default);
+window.customElements.define("talentics-icons-cancel-circle", (init_CancelCircle(), __toCommonJS(CancelCircle_exports)).default);
+window.customElements.define("talentics-icons-chart", (init_Chart(), __toCommonJS(Chart_exports)).default);
+window.customElements.define("talentics-icons-chat-audio", (init_ChatAudio(), __toCommonJS(ChatAudio_exports)).default);
+window.customElements.define("talentics-icons-check-circle", (init_CheckCircle(), __toCommonJS(CheckCircle_exports)).default);
+window.customElements.define("talentics-icons-chevron-down", (init_ChevronDown(), __toCommonJS(ChevronDown_exports)).default);
+window.customElements.define("talentics-icons-chevron-left", (init_ChevronLeft(), __toCommonJS(ChevronLeft_exports)).default);
+window.customElements.define("talentics-icons-chevron-right", (init_ChevronRight(), __toCommonJS(ChevronRight_exports)).default);
+window.customElements.define("talentics-icons-chevron-up", (init_ChevronUp(), __toCommonJS(ChevronUp_exports)).default);
+window.customElements.define("talentics-icons-chevron-up-down", (init_ChevronUpDown(), __toCommonJS(ChevronUpDown_exports)).default);
+window.customElements.define("talentics-icons-close", (init_Close(), __toCommonJS(Close_exports)).default);
 window.customElements.define("talentics-icons-computer-edit", (init_ComputerEdit(), __toCommonJS(ComputerEdit_exports)).default);
+window.customElements.define("talentics-icons-computer", (init_Computer(), __toCommonJS(Computer_exports)).default);
 window.customElements.define("talentics-icons-copy", (init_Copy(), __toCommonJS(Copy_exports)).default);
 window.customElements.define("talentics-icons-detail", (init_Detail(), __toCommonJS(Detail_exports)).default);
+window.customElements.define("talentics-icons-double-chevron-down", (init_DoubleChevronDown(), __toCommonJS(DoubleChevronDown_exports)).default);
+window.customElements.define("talentics-icons-double-chevron-left", (init_DoubleChevronLeft(), __toCommonJS(DoubleChevronLeft_exports)).default);
+window.customElements.define("talentics-icons-double-chevron-right", (init_DoubleChevronRight(), __toCommonJS(DoubleChevronRight_exports)).default);
+window.customElements.define("talentics-icons-double-chevron-up", (init_DoubleChevronUp(), __toCommonJS(DoubleChevronUp_exports)).default);
+window.customElements.define("talentics-icons-envelope", (init_Envelope(), __toCommonJS(Envelope_exports)).default);
+window.customElements.define("talentics-icons-envelope-open", (init_EnvelopeOpen(), __toCommonJS(EnvelopeOpen_exports)).default);
+window.customElements.define("talentics-icons-error", (init_Error(), __toCommonJS(Error_exports)).default);
+window.customElements.define("talentics-icons-exit-fullscreen", (init_ExitFullscreen(), __toCommonJS(ExitFullscreen_exports)).default);
+window.customElements.define("talentics-icons-filter", (init_Filter(), __toCommonJS(Filter_exports)).default);
+window.customElements.define("talentics-icons-folder", (init_Folder(), __toCommonJS(Folder_exports)).default);
+window.customElements.define("talentics-icons-forward", (init_Forward(), __toCommonJS(Forward_exports)).default);
+window.customElements.define("talentics-icons-fullscreen", (init_Fullscreen(), __toCommonJS(Fullscreen_exports)).default);
 window.customElements.define("talentics-icons-github", (init_Github(), __toCommonJS(Github_exports)).default);
+window.customElements.define("talentics-icons-graph", (init_Graph(), __toCommonJS(Graph_exports)).default);
+window.customElements.define("talentics-icons-info", (init_Info(), __toCommonJS(Info_exports)).default);
+window.customElements.define("talentics-icons-info-square", (init_InfoSquare(), __toCommonJS(InfoSquare_exports)).default);
+window.customElements.define("talentics-icons-minus", (init_Minus(), __toCommonJS(Minus_exports)).default);
+window.customElements.define("talentics-icons-mobile", (init_Mobile(), __toCommonJS(Mobile_exports)).default);
+window.customElements.define("talentics-icons-multiple-files", (init_MultipleFiles(), __toCommonJS(MultipleFiles_exports)).default);
+window.customElements.define("talentics-icons-mute", (init_Mute(), __toCommonJS(Mute_exports)).default);
 window.customElements.define("talentics-icons-not-verified", (init_NotVerified(), __toCommonJS(NotVerified_exports)).default);
 window.customElements.define("talentics-icons-npm", (init_Npm(), __toCommonJS(Npm_exports)).default);
+window.customElements.define("talentics-icons-pause", (init_Pause(), __toCommonJS(Pause_exports)).default);
+window.customElements.define("talentics-icons-play", (init_Play(), __toCommonJS(Play_exports)).default);
+window.customElements.define("talentics-icons-play-square", (init_PlaySquare(), __toCommonJS(PlaySquare_exports)).default);
+window.customElements.define("talentics-icons-radio-button", (init_RadioButton(), __toCommonJS(RadioButton_exports)).default);
+window.customElements.define("talentics-icons-resume", (init_Resume(), __toCommonJS(Resume_exports)).default);
+window.customElements.define("talentics-icons-rewind", (init_Rewind(), __toCommonJS(Rewind_exports)).default);
+window.customElements.define("talentics-icons-search", (init_Search(), __toCommonJS(Search_exports)).default);
+window.customElements.define("talentics-icons-short-answer", (init_ShortAnswer(), __toCommonJS(ShortAnswer_exports)).default);
+window.customElements.define("talentics-icons-sort-by", (init_SortBy(), __toCommonJS(SortBy_exports)).default);
+window.customElements.define("talentics-icons-stop", (init_Stop(), __toCommonJS(Stop_exports)).default);
+window.customElements.define("talentics-icons-sub-square", (init_SubSquare(), __toCommonJS(SubSquare_exports)).default);
+window.customElements.define("talentics-icons-tablet", (init_Tablet(), __toCommonJS(Tablet_exports)).default);
+window.customElements.define("talentics-icons-text-files", (init_TextFiles(), __toCommonJS(TextFiles_exports)).default);
+window.customElements.define("talentics-icons-time", (init_Time(), __toCommonJS(Time_exports)).default);
+window.customElements.define("talentics-icons-turn-left", (init_TurnLeft(), __toCommonJS(TurnLeft_exports)).default);
+window.customElements.define("talentics-icons-turn-right", (init_TurnRight(), __toCommonJS(TurnRight_exports)).default);
+window.customElements.define("talentics-icons-upload-file", (init_UploadFile(), __toCommonJS(UploadFile_exports)).default);
 window.customElements.define("talentics-icons-verified", (init_Verified(), __toCommonJS(Verified_exports)).default);
+window.customElements.define("talentics-icons-video", (init_Video(), __toCommonJS(Video_exports)).default);
+window.customElements.define("talentics-icons-video-off", (init_VideoOff(), __toCommonJS(VideoOff_exports)).default);
+window.customElements.define("talentics-icons-visibility", (init_Visibility(), __toCommonJS(Visibility_exports)).default);
+window.customElements.define("talentics-icons-visibility-off", (init_VisibilityOff(), __toCommonJS(VisibilityOff_exports)).default);
+window.customElements.define("talentics-icons-volume", (init_Volume(), __toCommonJS(Volume_exports)).default);
+window.customElements.define("talentics-icons-volume-down", (init_VolumeDown(), __toCommonJS(VolumeDown_exports)).default);
+window.customElements.define("talentics-icons-volume-up", (init_VolumeUp(), __toCommonJS(VolumeUp_exports)).default);
+window.customElements.define("talentics-icons-warning", (init_Warning(), __toCommonJS(Warning_exports)).default);
 window.customElements.define("talentics-icons-whatsapp", (init_Whatsapp(), __toCommonJS(Whatsapp_exports)).default);
+window.customElements.define("talentics-icons-wifi", (init_Wifi(), __toCommonJS(Wifi_exports)).default);
+window.customElements.define("talentics-icons-wifi-off", (init_WifiOff(), __toCommonJS(WifiOff_exports)).default);
 window.customElements.define("talentics-illustrations-confirmation", (init_Confirmation(), __toCommonJS(Confirmation_exports)).default);
 window.customElements.define("talentics-illustrations-duplicate-item", (init_DuplicateItem(), __toCommonJS(DuplicateItem_exports)).default);
 //# sourceMappingURL=index.mjs.map
