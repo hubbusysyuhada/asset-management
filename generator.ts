@@ -3,7 +3,7 @@ import path from 'path'
 import _ from 'lodash'
 
 type AssetType = { class: string; tag: string; html: string }
-type AssetCollectionType = { icons: AssetType[]; illustrations: AssetType[] }
+type AssetCollectionType = { icons: AssetType[]; illustrations: AssetType[]; coloredIcons: AssetType[]; iconIllustrations: AssetType[] }
 type ChangeLogType = AssetCollectionType & { version: string }
 
 const dirPath = path.join(process.cwd(), 'assets')
@@ -26,7 +26,7 @@ const updateIndex = (type: string, componentName: string, className: string) => 
   writeFileSync(filePath, content)
 }
 
-const generateComponents = (type: 'icons' | 'illustrations') => {
+const generateComponents = (type: 'icons' | 'illustrations' | 'colored-icons' | 'icon-illustrations') => {
   const illustrationsDirPath = path.join(dirPath, type)
   const dir = readdirSync(illustrationsDirPath)
   const metadata: AssetType[] = []
@@ -65,7 +65,9 @@ const parseColor = (content: string) => {
 const generateAllComponents = (): AssetCollectionType => {
   const icons = generateComponents("icons")
   const illustrations = generateComponents("illustrations")
-  const metadata = { icons, illustrations }
+  const coloredIcons = generateComponents("colored-icons")
+  const iconIllustrations = generateComponents("icon-illustrations")
+  const metadata = { icons, illustrations, coloredIcons, iconIllustrations }
   return metadata
 }
 
@@ -78,12 +80,15 @@ const deleteAll = () => {
   writeFileSync(path.join(process.cwd(), `index.ts`), '')
   deleteDir('icons')
   deleteDir('illustrations')
+  deleteDir('colored-icons')
+  deleteDir('icon-illustrations')
   deleteDir('Vue/icons')
   deleteDir('Vue/illustrations')
+  deleteDir('Vue/colored-icons')
+  deleteDir('Vue/icon-illustrations')
 }
 
 const updateChangelog = (metadata: AssetCollectionType) => {
-  const { icons, illustrations } = metadata
   const jsonPath = path.join(process.cwd(), `dist`, 'package.json')
   const json = JSON.parse(readFileSync(jsonPath, { encoding: "utf-8" }))
   const version = json.version
@@ -94,8 +99,10 @@ const updateChangelog = (metadata: AssetCollectionType) => {
     const latest = _.omit(changelog[changelog.length - 1], 'version')
     isChange = JSON.stringify(latest) !== JSON.stringify(metadata)
   }
-  if (isChange) {
-    changelog.push({ version, icons, illustrations })
+  
+  if (!!changelog.find(c => c.version === version)) throw `Version ${version} already exists!`
+  else if (isChange) {
+    changelog.push({ version, ...metadata })
     writeFileSync(changelogPath, JSON.stringify(changelog, null, 2), { encoding: "utf-8" })
   }
   else throw 'No changes applied, please make changes before build and publish package'

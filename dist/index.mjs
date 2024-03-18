@@ -4135,6 +4135,435 @@ var init_DuplicateItem = __esm({
   }
 });
 
+// colored-icons/StarActive.ts
+var StarActive_exports = {};
+__export(StarActive_exports, {
+  default: () => StarActive_default
+});
+var StarActive, StarActive_default;
+var init_StarActive = __esm({
+  "colored-icons/StarActive.ts"() {
+    "use strict";
+    StarActive = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.95703 8.36523L11.957 2.86523L14.957 8.36523L20.957 9.36523L16.957 13.8652L17.457 19.8652L11.957 17.8652L6.45703 19.8652L6.95703 13.8652L2.95703 9.36523L8.95703 8.36523Z" fill="#FFD740"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10.1078 3.24107C10.7865 1.5863 13.1299 1.58631 13.8086 3.24107L15.5327 7.44479L20.0635 7.7855C21.847 7.91961 22.5711 10.1484 21.2071 11.3052L17.7419 14.2439L18.8179 18.6582C19.2415 20.3959 17.3456 21.7733 15.8239 20.8335L11.9582 18.446L8.09247 20.8335C6.57075 21.7733 4.67486 20.3959 5.09844 18.6582L6.17449 14.2439L2.70929 11.3052C1.34525 10.1484 2.06941 7.91962 3.85291 7.7855L8.38366 7.44479L10.1078 3.24107ZM11.9582 4L10.2341 8.20372C9.94679 8.90419 9.2886 9.38239 8.53364 9.43916L4.00288 9.77987L7.46808 12.7186C8.04549 13.2083 8.29689 13.982 8.11759 14.7176L7.04154 19.1319L10.9073 16.7444C11.5514 16.3466 12.365 16.3466 13.0091 16.7444L16.8748 19.1319L15.7988 14.7176C15.6195 13.982 15.8709 13.2083 16.4483 12.7186L19.9135 9.77987L15.3827 9.43916C14.6278 9.38239 13.9696 8.90419 13.6823 8.20372L11.9582 4Z" fill="#FFD740"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    StarActive_default = StarActive;
+  }
+});
+
+// colored-icons/StarDefault.ts
+var StarDefault_exports = {};
+__export(StarDefault_exports, {
+  default: () => StarDefault_default
+});
+var StarDefault, StarDefault_default;
+var init_StarDefault = __esm({
+  "colored-icons/StarDefault.ts"() {
+    "use strict";
+    StarDefault = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10.1078 3.24107C10.7865 1.5863 13.1299 1.58631 13.8086 3.24107L15.5327 7.44479L20.0635 7.7855C21.847 7.91961 22.5711 10.1484 21.2071 11.3052L17.7419 14.2439L18.8179 18.6582C19.2415 20.3959 17.3456 21.7733 15.8239 20.8335L11.9582 18.446L8.09247 20.8335C6.57075 21.7733 4.67486 20.3959 5.09844 18.6582L6.17449 14.2439L2.70929 11.3052C1.34525 10.1484 2.06941 7.91962 3.85291 7.7855L8.38366 7.44479L10.1078 3.24107ZM11.9582 4L10.2341 8.20372C9.94679 8.90419 9.2886 9.38239 8.53364 9.43916L4.00288 9.77987L7.46808 12.7186C8.04549 13.2083 8.29689 13.982 8.11759 14.7176L7.04154 19.1319L10.9073 16.7444C11.5514 16.3466 12.365 16.3466 13.0091 16.7444L16.8748 19.1319L15.7988 14.7176C15.6195 13.982 15.8709 13.2083 16.4483 12.7186L19.9135 9.77987L15.3827 9.43916C14.6278 9.38239 13.9696 8.90419 13.6823 8.20372L11.9582 4Z" fill="#989899"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    StarDefault_default = StarDefault;
+  }
+});
+
+// colored-icons/StarDisabled.ts
+var StarDisabled_exports = {};
+__export(StarDisabled_exports, {
+  default: () => StarDisabled_default
+});
+var StarDisabled, StarDisabled_default;
+var init_StarDisabled = __esm({
+  "colored-icons/StarDisabled.ts"() {
+    "use strict";
+    StarDisabled = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 8.5L12 3L15 8.5L21 9.5L17 14L17.5 20L12 18L6.5 20L7 14L3 9.5L9 8.5Z" fill="#B7B6B7"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10.1078 3.24107C10.7865 1.5863 13.1299 1.58631 13.8086 3.24107L15.5327 7.44479L20.0635 7.7855C21.847 7.91961 22.5711 10.1484 21.2071 11.3052L17.7419 14.2439L18.8179 18.6582C19.2415 20.3959 17.3456 21.7733 15.8239 20.8335L11.9582 18.446L8.09247 20.8335C6.57075 21.7733 4.67486 20.3959 5.09844 18.6582L6.17449 14.2439L2.70929 11.3052C1.34525 10.1484 2.06941 7.91962 3.85291 7.7855L8.38366 7.44479L10.1078 3.24107ZM11.9582 4L10.2341 8.20372C9.94679 8.90419 9.2886 9.38239 8.53364 9.43916L4.00288 9.77987L7.46808 12.7186C8.04549 13.2083 8.29689 13.982 8.11759 14.7176L7.04154 19.1319L10.9073 16.7444C11.5514 16.3466 12.365 16.3466 13.0091 16.7444L16.8748 19.1319L15.7988 14.7176C15.6195 13.982 15.8709 13.2083 16.4483 12.7186L19.9135 9.77987L15.3827 9.43916C14.6278 9.38239 13.9696 8.90419 13.6823 8.20372L11.9582 4Z" fill="#B7B6B7"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    StarDisabled_default = StarDisabled;
+  }
+});
+
+// colored-icons/StarHover.ts
+var StarHover_exports = {};
+__export(StarHover_exports, {
+  default: () => StarHover_default
+});
+var StarHover, StarHover_default;
+var init_StarHover = __esm({
+  "colored-icons/StarHover.ts"() {
+    "use strict";
+    StarHover = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.95703 8.36523L11.957 2.86523L14.957 8.36523L20.957 9.36523L16.957 13.8652L17.457 19.8652L11.957 17.8652L6.45703 19.8652L6.95703 13.8652L2.95703 9.36523L8.95703 8.36523Z" fill="#FFF3C2"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10.1078 3.24107C10.7865 1.5863 13.1299 1.58631 13.8086 3.24107L15.5327 7.44479L20.0635 7.7855C21.847 7.91961 22.5711 10.1484 21.2071 11.3052L17.7419 14.2439L18.8179 18.6582C19.2415 20.3959 17.3456 21.7733 15.8239 20.8335L11.9582 18.446L8.09247 20.8335C6.57075 21.7733 4.67486 20.3959 5.09844 18.6582L6.17449 14.2439L2.70929 11.3052C1.34525 10.1484 2.06941 7.91962 3.85291 7.7855L8.38366 7.44479L10.1078 3.24107ZM11.9582 4L10.2341 8.20372C9.94679 8.90419 9.2886 9.38239 8.53364 9.43916L4.00288 9.77987L7.46808 12.7186C8.04549 13.2083 8.29689 13.982 8.11759 14.7176L7.04154 19.1319L10.9073 16.7444C11.5514 16.3466 12.365 16.3466 13.0091 16.7444L16.8748 19.1319L15.7988 14.7176C15.6195 13.982 15.8709 13.2083 16.4483 12.7186L19.9135 9.77987L15.3827 9.43916C14.6278 9.38239 13.9696 8.90419 13.6823 8.20372L11.9582 4Z" fill="#FFD740"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    StarHover_default = StarHover;
+  }
+});
+
+// icon-illustrations/AssesmentActive.ts
+var AssesmentActive_exports = {};
+__export(AssesmentActive_exports, {
+  default: () => AssesmentActive_default
+});
+var AssesmentActive, AssesmentActive_default;
+var init_AssesmentActive = __esm({
+  "icon-illustrations/AssesmentActive.ts"() {
+    "use strict";
+    AssesmentActive = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M81.7181 113.017H21.1337C17.1854 113.017 13.9671 109.835 14.0003 105.89V22.1598C14.0003 18.2153 17.2186 15 21.1669 15H81.7181C85.6664 15 88.8848 18.2153 88.8848 22.1598V105.857C88.8848 109.802 85.6664 113.017 81.7181 113.017ZM72.8434 48.6807H24.9405C23.9099 48.6807 23.0456 47.4609 23.0456 46.0066C23.0456 44.5523 23.8767 43.3325 24.9405 43.3325H72.8434C73.874 43.3325 74.7383 44.5523 74.7383 46.0066C74.7383 47.4609 73.9072 48.6807 72.8434 48.6807ZM24.9405 66.4136H72.8434C73.9072 66.4136 74.7383 65.1938 74.7383 63.7395C74.7383 62.2852 73.874 61.0654 72.8434 61.0654H24.9405C23.8767 61.0654 23.0456 62.2852 23.0456 63.7395C23.0456 65.1938 23.9099 66.4136 24.9405 66.4136ZM72.8434 86.4976H24.9405C23.9099 86.4976 23.0456 85.2778 23.0456 83.8235C23.0456 82.3692 23.8767 81.1494 24.9405 81.1494H72.8434C73.874 81.1494 74.7383 82.3692 74.7383 83.8235C74.7383 85.2778 73.9072 86.4976 72.8434 86.4976Z" fill="#7D5BCA"/>
+<path d="M112.182 33.0732L78.2963 78.1498L64.561 85.4435C63.8748 85.7924 63.0954 85.2141 63.2597 84.4624L66.4431 69.234L100.329 24.1575C101.284 22.8607 103.108 22.6267 104.406 23.5821L111.602 28.973C112.903 29.9541 113.138 31.7764 112.182 33.0732Z" fill="#3D00C3"/>
+<path d="M77.8016 78.4213L64.1401 85.6795C63.6271 85.9541 63.0216 85.5099 63.1544 84.9189L66.3253 69.7964C66.3726 69.5555 66.671 69.439 66.8739 69.5956L77.883 77.8369C78.057 77.9711 78.0453 78.2857 77.8016 78.4213Z" fill="#FFC401"/>
+<path d="M112.189 33.0745L105.635 41.795L93.7558 32.8826L100.335 24.1587C101.295 22.8876 103.115 22.6279 104.413 23.5833L111.609 28.9742C112.884 29.9586 113.144 31.7777 112.189 33.0745Z" fill="#FFC401"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    AssesmentActive_default = AssesmentActive;
+  }
+});
+
+// icon-illustrations/AssesmentDefault.ts
+var AssesmentDefault_exports = {};
+__export(AssesmentDefault_exports, {
+  default: () => AssesmentDefault_default
+});
+var AssesmentDefault, AssesmentDefault_default;
+var init_AssesmentDefault = __esm({
+  "icon-illustrations/AssesmentDefault.ts"() {
+    "use strict";
+    AssesmentDefault = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M81.7181 113.017H21.1337C17.1854 113.017 13.9671 109.835 14.0003 105.89V22.1598C14.0003 18.2153 17.2186 15 21.1669 15H81.7181C85.6664 15 88.8848 18.2153 88.8848 22.1598V105.857C88.8848 109.802 85.6664 113.017 81.7181 113.017ZM72.8434 48.6807H24.9405C23.9099 48.6807 23.0456 47.4609 23.0456 46.0066C23.0456 44.5523 23.8767 43.3325 24.9405 43.3325H72.8434C73.874 43.3325 74.7383 44.5523 74.7383 46.0066C74.7383 47.4609 73.9072 48.6807 72.8434 48.6807ZM24.9405 66.4136H72.8434C73.9072 66.4136 74.7383 65.1938 74.7383 63.7395C74.7383 62.2852 73.874 61.0654 72.8434 61.0654H24.9405C23.8767 61.0654 23.0456 62.2852 23.0456 63.7395C23.0456 65.1938 23.9099 66.4136 24.9405 66.4136ZM72.8434 86.4976H24.9405C23.9099 86.4976 23.0456 85.2778 23.0456 83.8235C23.0456 82.3692 23.8767 81.1494 24.9405 81.1494H72.8434C73.874 81.1494 74.7383 82.3692 74.7383 83.8235C74.7383 85.2778 73.9072 86.4976 72.8434 86.4976Z" fill="#D1D1D2"/>
+<path d="M112.182 33.0732L78.2963 78.1498L64.561 85.4435C63.8748 85.7924 63.0954 85.2141 63.2597 84.4624L66.4431 69.234L100.329 24.1575C101.284 22.8607 103.108 22.6267 104.406 23.5821L111.602 28.973C112.903 29.9541 113.138 31.7764 112.182 33.0732Z" fill="#989899"/>
+<path d="M77.8016 78.4213L64.1401 85.6795C63.6271 85.9541 63.0216 85.5099 63.1544 84.9189L66.3253 69.7964C66.3726 69.5555 66.671 69.439 66.8739 69.5956L77.883 77.8369C78.057 77.9711 78.0453 78.2857 77.8016 78.4213Z" fill="#E8E8E8"/>
+<path d="M112.189 33.0745L105.635 41.795L93.7558 32.8826L100.335 24.1587C101.295 22.8876 103.115 22.6279 104.413 23.5833L111.609 28.9742C112.884 29.9586 113.144 31.7777 112.189 33.0745Z" fill="#E8E8E8"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    AssesmentDefault_default = AssesmentDefault;
+  }
+});
+
+// icon-illustrations/EmployeeDetailActive.ts
+var EmployeeDetailActive_exports = {};
+__export(EmployeeDetailActive_exports, {
+  default: () => EmployeeDetailActive_default
+});
+var EmployeeDetailActive, EmployeeDetailActive_default;
+var init_EmployeeDetailActive = __esm({
+  "icon-illustrations/EmployeeDetailActive.ts"() {
+    "use strict";
+    EmployeeDetailActive = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M53.6459 71.7362H27.1577C25.9035 71.7362 24.8789 70.7205 24.8789 69.4574V68.9363C24.8789 60.2541 31.989 52.9586 40.6712 53.1087C49.1061 53.2589 55.9158 60.1569 55.9158 68.6272V69.4574C55.9247 70.7116 54.9001 71.7362 53.6459 71.7362Z" fill="#3D00C3"/>
+<path d="M48.0498 45.6902C47.3167 41.6273 44.1636 38.5625 40.401 38.5625C36.6384 38.5625 33.4852 41.6273 32.7521 45.6902C31.6039 45.8845 30.7207 47.0239 30.7207 48.3841C30.7207 49.8944 31.7894 51.1133 33.1054 51.1133C33.1584 51.1133 33.2026 51.1045 33.2468 51.1045C34.4568 54.2488 37.2037 56.4569 40.401 56.4569C43.5983 56.4569 46.3363 54.2576 47.5552 51.1045C47.5993 51.1045 47.6523 51.1133 47.6965 51.1133C49.0125 51.1133 50.0812 49.8856 50.0812 48.3841C50.0812 47.0239 49.198 45.8845 48.0498 45.6902Z" fill="#FFC401"/>
+<path d="M42.9094 66.8527L40.401 68.3189L37.8926 66.8527L39.6502 60.4492H41.1429L42.9094 66.8527Z" fill="#FFC401"/>
+<path d="M41.4438 59.0889H39.3594L39.6508 60.4491H41.1435L41.4438 59.0889Z" fill="#FFC401"/>
+<path d="M27.2848 24.0245C22.7273 24.0245 19 27.7517 19 32.3004V98.5431C19 103.101 22.7273 106.828 27.2848 106.828H76.9668C81.5243 106.828 85.2515 103.101 85.2515 98.5431V32.3004C85.2515 27.7252 81.542 24.0156 76.9668 24.0156H27.2848V24.0245ZM54.2676 66.1725C54.2676 68.2658 52.5718 69.9616 50.4785 69.9616H30.3231C28.2298 69.9616 26.534 68.2658 26.534 66.1725V35.0207C26.534 32.9275 28.2298 31.2317 30.3231 31.2317H50.4785C52.5718 31.2317 54.2676 32.9275 54.2676 35.0207V66.1725Z" fill="#7D5BCA"/>
+<path d="M77.603 80.0657H26.6403C25.6864 80.0657 24.918 79.2973 24.918 78.3434C24.918 77.3895 25.6864 76.6211 26.6403 76.6211H77.603C78.5569 76.6211 79.3253 77.3895 79.3253 78.3434C79.3253 79.2973 78.5569 80.0657 77.603 80.0657Z" fill="#3D00C3"/>
+<path d="M77.603 89.9407H26.6403C25.6864 89.9407 24.918 89.1723 24.918 88.2184C24.918 87.2645 25.6864 86.4961 26.6403 86.4961H77.603C78.5569 86.4961 79.3253 87.2645 79.3253 88.2184C79.3253 89.1723 78.5569 89.9407 77.603 89.9407Z" fill="#3D00C3"/>
+<path d="M77.603 99.8147H26.6403C25.6864 99.8147 24.918 99.0463 24.918 98.0924C24.918 97.1385 25.6864 96.3701 26.6403 96.3701H77.603C78.5569 96.3701 79.3253 97.1385 79.3253 98.0924C79.3253 99.0463 78.5569 99.8147 77.603 99.8147Z" fill="#3D00C3"/>
+<path d="M51.1426 27.9728C47.2917 27.9728 44.1562 24.8373 44.1562 20.9864C44.1562 17.1355 47.2829 14 51.1426 14C55.0024 14 58.129 17.1355 58.129 20.9864C58.129 24.8373 54.9936 27.9728 51.1426 27.9728ZM51.1426 18.4162C49.7206 18.4162 48.5724 19.5732 48.5724 20.9864C48.5724 22.3996 49.7295 23.5566 51.1426 23.5566C52.5558 23.5566 53.7129 22.3996 53.7129 20.9864C53.7129 19.5732 52.5558 18.4162 51.1426 18.4162Z" fill="#7D5BCA"/>
+<path d="M81.904 114C97.1672 114 109.541 101.627 109.541 86.364C109.541 71.1008 97.1672 58.7275 81.904 58.7275C66.6408 58.7275 54.2676 71.1008 54.2676 86.364C54.2676 101.627 66.6408 114 81.904 114Z" fill="#FFC401"/>
+<path d="M100.16 97.3067L90.8066 90.4175C94.3573 83.9699 92.6791 75.7116 86.5936 71.2336C79.9782 66.3581 70.6247 67.7713 65.7492 74.3868C60.8738 81.0022 62.287 90.3557 68.9024 95.2311C71.4903 97.1389 74.5551 98.1458 77.7171 98.1458C78.4678 98.1458 79.2186 98.0928 79.9782 97.978C83.2638 97.4834 86.2138 95.9377 88.4749 93.5883L97.8195 100.478C98.1728 100.734 98.5791 100.857 98.9854 100.857C99.586 100.857 100.178 100.584 100.566 100.062C101.22 99.1704 101.035 97.9427 100.16 97.3067ZM71.2341 92.0603C66.3587 88.4655 65.3164 81.5763 68.9112 76.7008C70.6512 74.3426 73.2126 72.7969 76.1096 72.3553C76.666 72.267 77.2225 72.2317 77.7789 72.2317C80.1107 72.2317 82.3629 72.9736 84.2707 74.3779C86.6289 76.1179 88.1746 78.6793 88.6162 81.5763C89.0578 84.4733 88.3336 87.3792 86.5936 89.7374C82.9988 94.6129 76.1096 95.6551 71.2341 92.0603Z" fill="#3D00C3"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    EmployeeDetailActive_default = EmployeeDetailActive;
+  }
+});
+
+// icon-illustrations/EmployeeDetailDefault.ts
+var EmployeeDetailDefault_exports = {};
+__export(EmployeeDetailDefault_exports, {
+  default: () => EmployeeDetailDefault_default
+});
+var EmployeeDetailDefault, EmployeeDetailDefault_default;
+var init_EmployeeDetailDefault = __esm({
+  "icon-illustrations/EmployeeDetailDefault.ts"() {
+    "use strict";
+    EmployeeDetailDefault = class extends HTMLElement {
+      constructor() {
+        super();
+        this.id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+        this.props = ["size", "color"];
+        this.contentStyle = "";
+        this.colorStyle = "";
+        this.size = "";
+        this.color = "";
+        this._initElement();
+        const shadowRoot = this.attachShadow({ mode: "closed" });
+        shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M53.6459 71.7362H27.1577C25.9035 71.7362 24.8789 70.7205 24.8789 69.4574V68.9363C24.8789 60.2541 31.989 52.9586 40.6712 53.1087C49.1061 53.2589 55.9158 60.1569 55.9158 68.6272V69.4574C55.9247 70.7116 54.9001 71.7362 53.6459 71.7362Z" fill="#989899"/>
+<path d="M48.0498 45.6902C47.3167 41.6273 44.1636 38.5625 40.401 38.5625C36.6384 38.5625 33.4852 41.6273 32.7521 45.6902C31.6039 45.8845 30.7207 47.0239 30.7207 48.3841C30.7207 49.8944 31.7894 51.1133 33.1054 51.1133C33.1584 51.1133 33.2026 51.1045 33.2468 51.1045C34.4568 54.2488 37.2037 56.4569 40.401 56.4569C43.5983 56.4569 46.3363 54.2576 47.5552 51.1045C47.5993 51.1045 47.6523 51.1133 47.6965 51.1133C49.0125 51.1133 50.0812 49.8856 50.0812 48.3841C50.0812 47.0239 49.198 45.8845 48.0498 45.6902Z" fill="#E8E8E8"/>
+<path d="M42.9094 66.8527L40.401 68.3189L37.8926 66.8527L39.6502 60.4492H41.1429L42.9094 66.8527Z" fill="#E8E8E8"/>
+<path d="M41.4438 59.0889H39.3594L39.6508 60.4491H41.1435L41.4438 59.0889Z" fill="#E8E8E8"/>
+<path d="M27.2848 24.0245C22.7273 24.0245 19 27.7517 19 32.3004V98.5431C19 103.101 22.7273 106.828 27.2848 106.828H76.9668C81.5243 106.828 85.2515 103.101 85.2515 98.5431V32.3004C85.2515 27.7252 81.542 24.0156 76.9668 24.0156H27.2848V24.0245ZM54.2676 66.1725C54.2676 68.2658 52.5718 69.9616 50.4785 69.9616H30.3231C28.2298 69.9616 26.534 68.2658 26.534 66.1725V35.0207C26.534 32.9275 28.2298 31.2317 30.3231 31.2317H50.4785C52.5718 31.2317 54.2676 32.9275 54.2676 35.0207V66.1725Z" fill="#D1D1D2"/>
+<path d="M77.603 80.0657H26.6403C25.6864 80.0657 24.918 79.2973 24.918 78.3434C24.918 77.3895 25.6864 76.6211 26.6403 76.6211H77.603C78.5569 76.6211 79.3253 77.3895 79.3253 78.3434C79.3253 79.2973 78.5569 80.0657 77.603 80.0657Z" fill="#989899"/>
+<path d="M77.603 89.9407H26.6403C25.6864 89.9407 24.918 89.1723 24.918 88.2184C24.918 87.2645 25.6864 86.4961 26.6403 86.4961H77.603C78.5569 86.4961 79.3253 87.2645 79.3253 88.2184C79.3253 89.1723 78.5569 89.9407 77.603 89.9407Z" fill="#989899"/>
+<path d="M77.603 99.8147H26.6403C25.6864 99.8147 24.918 99.0463 24.918 98.0924C24.918 97.1385 25.6864 96.3701 26.6403 96.3701H77.603C78.5569 96.3701 79.3253 97.1385 79.3253 98.0924C79.3253 99.0463 78.5569 99.8147 77.603 99.8147Z" fill="#989899"/>
+<path d="M51.1426 27.9728C47.2917 27.9728 44.1562 24.8373 44.1562 20.9864C44.1562 17.1355 47.2829 14 51.1426 14C55.0024 14 58.129 17.1355 58.129 20.9864C58.129 24.8373 54.9936 27.9728 51.1426 27.9728ZM51.1426 18.4162C49.7206 18.4162 48.5724 19.5732 48.5724 20.9864C48.5724 22.3996 49.7295 23.5566 51.1426 23.5566C52.5558 23.5566 53.7129 22.3996 53.7129 20.9864C53.7129 19.5732 52.5558 18.4162 51.1426 18.4162Z" fill="#D1D1D2"/>
+<path d="M81.904 114C97.1672 114 109.541 101.627 109.541 86.364C109.541 71.1008 97.1672 58.7275 81.904 58.7275C66.6408 58.7275 54.2676 71.1008 54.2676 86.364C54.2676 101.627 66.6408 114 81.904 114Z" fill="#E8E8E8"/>
+<path d="M100.16 97.3067L90.8066 90.4175C94.3573 83.9699 92.6791 75.7116 86.5936 71.2336C79.9782 66.3581 70.6247 67.7713 65.7492 74.3868C60.8738 81.0022 62.287 90.3557 68.9024 95.2311C71.4903 97.1389 74.5551 98.1458 77.7171 98.1458C78.4678 98.1458 79.2186 98.0928 79.9782 97.978C83.2638 97.4834 86.2138 95.9377 88.4749 93.5883L97.8195 100.478C98.1728 100.734 98.5791 100.857 98.9854 100.857C99.586 100.857 100.178 100.584 100.566 100.062C101.22 99.1704 101.035 97.9427 100.16 97.3067ZM71.2341 92.0603C66.3587 88.4655 65.3164 81.5763 68.9112 76.7008C70.6512 74.3426 73.2126 72.7969 76.1096 72.3553C76.666 72.267 77.2225 72.2317 77.7789 72.2317C80.1107 72.2317 82.3629 72.9736 84.2707 74.3779C86.6289 76.1179 88.1746 78.6793 88.6162 81.5763C89.0578 84.4733 88.3336 87.3792 86.5936 89.7374C82.9988 94.6129 76.1096 95.6551 71.2341 92.0603Z" fill="#989899"/>
+</svg>
+`;
+      }
+      attributeChangedCallback(name, _, newValue) {
+        this._setState();
+      }
+      connectedCallback() {
+        this._setState();
+      }
+      disconnectedCallback() {
+        this._setState();
+      }
+      _initElement() {
+        this._setState();
+        const size = this.size || 24;
+        let contentStyle = `object-fit: content; width: ${size}; height: ${size}`;
+        this.contentStyle = contentStyle;
+        if (this.color)
+          this.colorStyle = `fill: ${this.color}`;
+      }
+      _setState() {
+        this.props.forEach((key) => this[key] = this.getAttribute(key));
+      }
+    };
+    EmployeeDetailDefault_default = EmployeeDetailDefault;
+  }
+});
+
 // index.ts
 window.customElements.define("talentics-icons-add", (init_Add(), __toCommonJS(Add_exports)).default);
 window.customElements.define("talentics-icons-add-square", (init_AddSquare(), __toCommonJS(AddSquare_exports)).default);
@@ -4214,4 +4643,12 @@ window.customElements.define("talentics-icons-wifi", (init_Wifi(), __toCommonJS(
 window.customElements.define("talentics-icons-wifi-off", (init_WifiOff(), __toCommonJS(WifiOff_exports)).default);
 window.customElements.define("talentics-illustrations-confirmation", (init_Confirmation(), __toCommonJS(Confirmation_exports)).default);
 window.customElements.define("talentics-illustrations-duplicate-item", (init_DuplicateItem(), __toCommonJS(DuplicateItem_exports)).default);
+window.customElements.define("talentics-colored-icons-star-active", (init_StarActive(), __toCommonJS(StarActive_exports)).default);
+window.customElements.define("talentics-colored-icons-star-default", (init_StarDefault(), __toCommonJS(StarDefault_exports)).default);
+window.customElements.define("talentics-colored-icons-star-disabled", (init_StarDisabled(), __toCommonJS(StarDisabled_exports)).default);
+window.customElements.define("talentics-colored-icons-star-hover", (init_StarHover(), __toCommonJS(StarHover_exports)).default);
+window.customElements.define("talentics-icon-illustrations-assesment-active", (init_AssesmentActive(), __toCommonJS(AssesmentActive_exports)).default);
+window.customElements.define("talentics-icon-illustrations-assesment-default", (init_AssesmentDefault(), __toCommonJS(AssesmentDefault_exports)).default);
+window.customElements.define("talentics-icon-illustrations-employee-detail-active", (init_EmployeeDetailActive(), __toCommonJS(EmployeeDetailActive_exports)).default);
+window.customElements.define("talentics-icon-illustrations-employee-detail-default", (init_EmployeeDetailDefault(), __toCommonJS(EmployeeDetailDefault_exports)).default);
 //# sourceMappingURL=index.mjs.map
