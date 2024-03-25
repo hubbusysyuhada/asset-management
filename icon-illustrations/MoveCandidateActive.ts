@@ -1,0 +1,45 @@
+class MoveCandidateActive extends HTMLElement {
+  id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+  props = ['size', 'color']
+  contentStyle = '';
+  colorStyle = '';
+  size = ''
+  color = ''
+  constructor() {
+    super()
+    this._initElement()
+    const shadowRoot = this.attachShadow({mode: 'closed'});
+    shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M57.1174 89.6128C57.1174 86.2134 59.8736 83.4572 63.273 83.4572H81.8317V80.4253C81.8317 77.0259 84.5879 74.2697 88.0792 74.2697C89.5492 74.2697 90.9273 74.8209 92.0298 75.7397L97.6341 80.4253C93.2241 63.796 78.1567 51.3929 60.1492 51.1173C38.0993 50.6579 20 69.1247 20 91.2665V93.7471C20 96.3196 22.1131 98.4328 24.6856 98.4328H57.1174V89.6128Z" fill="#3D00C3"/>
+<path d="M78.9828 32.1912C77.1453 21.8093 69.0603 14 59.5054 14C49.9504 14 41.9573 21.8093 40.0279 32.1912C37.0879 32.6506 34.8829 35.5906 34.8829 39.0818C34.8829 42.9405 37.6392 46.0643 40.9467 46.0643C41.0385 46.0643 41.2223 46.0643 41.3142 46.0643C44.4379 54.0574 51.4204 59.6617 59.5054 59.6617C67.5903 59.6617 74.6647 54.0574 77.6965 46.0643C77.7884 46.0643 77.9722 46.0643 78.064 46.0643C81.3715 46.0643 84.1278 42.9405 84.1278 39.0818C84.2197 35.4987 81.9228 32.6506 78.9828 32.1912Z" fill="#FFC401"/>
+<path d="M108.292 95.2174L89.1816 79.2312C88.171 78.3124 86.5173 79.1393 86.5173 80.4256V88.0512H63.3648C62.4461 88.0512 61.803 88.7862 61.803 89.613V103.21C61.803 104.129 62.538 104.772 63.3648 104.772H86.5173V112.398C86.5173 113.776 88.0791 114.511 89.1816 113.592L108.292 97.6061C109.027 97.0549 109.027 95.8605 108.292 95.2174Z" fill="#7D5BCA"/>
+</svg>
+`
+  }
+
+  attributeChangedCallback(name: string, _: string, newValue: string) {
+    this._setState();
+  }
+
+  connectedCallback() {
+    this._setState();
+  }
+  
+  disconnectedCallback() {
+    this._setState();
+  }
+
+  _initElement() {
+    this._setState()
+    const size = this.size || 24
+    let contentStyle = `object-fit: content; width: ${size}; height: ${size}`
+    this.contentStyle = contentStyle
+    if (this.color) this.colorStyle = `fill: ${this.color}`
+  }
+
+  _setState() {
+    // @ts-ignore
+    this.props.forEach(key => this[key as keyof typeof MoveCandidateActive] = this.getAttribute(key));
+  }
+}
+export default MoveCandidateActive

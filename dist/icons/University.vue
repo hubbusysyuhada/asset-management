@@ -1,0 +1,36 @@
+<template>
+  <div v-html="template"></div>
+</template>
+
+<script>
+export default {
+  name: 'University',
+  props: {
+    size: {
+      Type: Number,
+    },
+    color: {}
+  },
+  computed: {
+    template() {
+      return `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  d="M16 22H8C7.45 22 7 21.55 7 21V7C7 6.45 7.45 6 8 6H16C16.55 6 17 6.45 17 7V21C17 21.55 16.55 22 16 22ZM9 20H15V8H9V20Z" fill="#414042"/>
+<path style="${this.colorStyle}"  d="M16.0002 8H8.00022C7.69022 8 7.40022 7.86 7.21022 7.62C7.02022 7.38 6.96022 7.06 7.03022 6.76L8.03022 2.76C8.14022 2.31 8.54022 2 9.00022 2H15.0002C15.4602 2 15.8602 2.31 15.9702 2.76L16.9702 6.76C17.0402 7.06 16.9802 7.38 16.7902 7.62C16.6002 7.86 16.3102 8 16.0002 8ZM9.28022 6H14.7202L14.2202 4H9.78022L9.28022 6Z" fill="#414042"/>
+<path style="${this.colorStyle}"  d="M8 22H3C2.45 22 2 21.55 2 21V14C2 13.92 2.01 13.84 2.03 13.76L3.03 9.76C3.14 9.31 3.54 9 4 9H8C8.55 9 9 9.45 9 10V21C9 21.55 8.55 22 8 22ZM4 20H7V11H4.78L4 14.12V20Z" fill="#414042"/>
+<path style="${this.colorStyle}"  d="M21 22H16C15.45 22 15 21.55 15 21V10C15 9.45 15.45 9 16 9H20C20.46 9 20.86 9.31 20.97 9.76L21.97 13.76C21.99 13.84 22 13.92 22 14V21C22 21.55 21.55 22 21 22ZM17 20H20V14.12L19.22 11H17V20Z" fill="#414042"/>
+<path style="${this.colorStyle}"  d="M13 15H11V21H13V15Z" fill="#414042"/>
+<path style="${this.colorStyle}"  d="M12.0001 13.34C12.9224 13.34 13.6701 12.5923 13.6701 11.67C13.6701 10.7477 12.9224 10 12.0001 10C11.0778 10 10.3301 10.7477 10.3301 11.67C10.3301 12.5923 11.0778 13.34 12.0001 13.34Z" fill="#414042"/>
+</svg>
+`
+    },
+    contentStyle() {
+      const size = this.size || 24
+      return `width: ${size}px; height: ${size}px`
+    },
+    colorStyle() {
+      if (this.color) return `fill: ${this.color}`
+      return ""
+    }
+  },
+}
+</script>

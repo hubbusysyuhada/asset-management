@@ -1,0 +1,49 @@
+class AddAdministratorDefault extends HTMLElement {
+  id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+  props = ['size', 'color']
+  contentStyle = '';
+  colorStyle = '';
+  size = ''
+  color = ''
+  constructor() {
+    super()
+    this._initElement()
+    const shadowRoot = this.attachShadow({mode: 'closed'});
+    shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M91.8921 50.0362H85.8237V35.5942H91.8921C93.0644 35.5942 94.0101 36.54 94.0101 37.7123V47.928C94.0101 49.0904 93.0644 50.0362 91.8921 50.0362Z" fill="#D1D1D2"/>
+<path d="M36.9997 35.5942H43.0681V50.046H36.9997C35.8274 50.046 34.8817 49.1003 34.8817 47.928V37.7123C34.8817 36.54 35.8274 35.5942 36.9997 35.5942Z" fill="#D1D1D2"/>
+<path d="M65.183 64.2713C41.9834 63.8674 23 83.2448 23 106.445V109.075C23 111.794 25.2067 114 27.9256 114H100.963C103.682 114 105.888 111.794 105.888 109.075V105.716C105.888 83.1069 87.703 64.6654 65.183 64.2713ZM75.8421 91.1554H66.907V100.09C66.907 101.45 65.8037 102.553 64.4442 102.553C63.0847 102.553 61.9814 101.45 61.9814 100.09V91.1554H53.0463C51.6868 91.1554 50.5835 90.0521 50.5835 88.6926C50.5835 87.3331 51.6868 86.2298 53.0463 86.2298H61.9814V77.2947C61.9814 75.9352 63.0847 74.8319 64.4442 74.8319C65.8037 74.8319 66.907 75.9352 66.907 77.2947V86.2298H75.8421C77.2016 86.2298 78.3049 87.3331 78.3049 88.6926C78.3049 90.0521 77.2016 91.1554 75.8421 91.1554Z" fill="#989899"/>
+<path d="M64.4437 60.843C75.7604 60.843 84.9343 51.669 84.9343 40.3524C84.9343 29.0358 75.7604 19.8618 64.4437 19.8618C53.1271 19.8618 43.9531 29.0358 43.9531 40.3524C43.9531 51.669 53.1271 60.843 64.4437 60.843Z" fill="#E8E8E8"/>
+<path d="M90.7972 40.3521H87.8418C87.8418 27.447 77.3502 16.9554 64.4451 16.9554C51.54 16.9554 41.0484 27.447 41.0484 40.3521H38.093C38.093 25.8215 49.9145 14 64.4451 14C78.9757 14 90.7972 25.8215 90.7972 40.3521Z" fill="#D1D1D2"/>
+<path d="M81.9864 59.1379L81.2672 58.4681C85.4441 53.9562 87.7395 48.075 87.7395 41.918H88.7246C88.7246 48.3213 86.3308 54.4389 81.9864 59.1379Z" fill="#D1D1D2"/>
+<path d="M83.7209 60.7432C82.6471 61.8958 80.8443 61.9746 79.6917 60.9008C78.5391 59.827 78.4603 58.0242 79.5341 56.8716C80.6079 55.719 82.4106 55.6402 83.5632 56.714C84.7257 57.7779 84.7946 59.5807 83.7209 60.7432Z" fill="#D1D1D2"/>
+</svg>
+`
+  }
+
+  attributeChangedCallback(name: string, _: string, newValue: string) {
+    this._setState();
+  }
+
+  connectedCallback() {
+    this._setState();
+  }
+  
+  disconnectedCallback() {
+    this._setState();
+  }
+
+  _initElement() {
+    this._setState()
+    const size = this.size || 24
+    let contentStyle = `object-fit: content; width: ${size}; height: ${size}`
+    this.contentStyle = contentStyle
+    if (this.color) this.colorStyle = `fill: ${this.color}`
+  }
+
+  _setState() {
+    // @ts-ignore
+    this.props.forEach(key => this[key as keyof typeof AddAdministratorDefault] = this.getAttribute(key));
+  }
+}
+export default AddAdministratorDefault

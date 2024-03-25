@@ -3,7 +3,7 @@ import path from 'path'
 import _ from 'lodash'
 
 type AssetType = { class: string; tag: string; html: string }
-type AssetCollectionType = { icons: AssetType[]; illustrations: AssetType[]; coloredIcons: AssetType[]; iconIllustrations: AssetType[] }
+type AssetCollectionType = { icons: AssetType[]; illustrations: AssetType[]; specialIcons: AssetType[]; iconIllustrations: AssetType[] }
 type ChangeLogType = AssetCollectionType & { version: string }
 
 const dirPath = path.join(process.cwd(), 'assets')
@@ -26,7 +26,7 @@ const updateIndex = (type: string, componentName: string, className: string) => 
   writeFileSync(filePath, content)
 }
 
-const generateComponents = (type: 'icons' | 'illustrations' | 'colored-icons' | 'icon-illustrations') => {
+const generateComponents = (type: 'icons' | 'illustrations' | 'special-icons' | 'icon-illustrations') => {
   const illustrationsDirPath = path.join(dirPath, type)
   const dir = readdirSync(illustrationsDirPath)
   const metadata: AssetType[] = []
@@ -65,9 +65,9 @@ const parseColor = (content: string) => {
 const generateAllComponents = (): AssetCollectionType => {
   const icons = generateComponents("icons")
   const illustrations = generateComponents("illustrations")
-  const coloredIcons = generateComponents("colored-icons")
+  const specialIcons = generateComponents("special-icons")
   const iconIllustrations = generateComponents("icon-illustrations")
-  const metadata = { icons, illustrations, coloredIcons, iconIllustrations }
+  const metadata = { icons, illustrations, specialIcons, iconIllustrations }
   return metadata
 }
 
@@ -80,11 +80,11 @@ const deleteAll = () => {
   writeFileSync(path.join(process.cwd(), `index.ts`), '')
   deleteDir('icons')
   deleteDir('illustrations')
-  deleteDir('colored-icons')
+  deleteDir('special-icons')
   deleteDir('icon-illustrations')
   deleteDir('Vue/icons')
   deleteDir('Vue/illustrations')
-  deleteDir('Vue/colored-icons')
+  deleteDir('Vue/special-icons')
   deleteDir('Vue/icon-illustrations')
 }
 
@@ -92,7 +92,7 @@ const updateChangelog = (metadata: AssetCollectionType) => {
   const jsonPath = path.join(process.cwd(), `dist`, 'package.json')
   const json = JSON.parse(readFileSync(jsonPath, { encoding: "utf-8" }))
   const version = json.version
-  const changelogPath = path.join(process.cwd(), `dist`, 'changelog.json')
+  const changelogPath = path.join(process.cwd(), 'changelog.json')
   const changelog: ChangeLogType[] = JSON.parse(readFileSync(changelogPath, { encoding: "utf-8" }))
   let isChange = true
   if (changelog.length) {

@@ -1,0 +1,44 @@
+class IconWhatsapp extends HTMLElement {
+  id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+  props = ['size', 'color']
+  contentStyle = '';
+  colorStyle = '';
+  size = ''
+  color = ''
+  constructor() {
+    super()
+    this._initElement()
+    const shadowRoot = this.attachShadow({mode: 'closed'});
+    shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  d="M10.1821 11.0582C10.9433 12.1303 11.8446 13.0522 13.0564 13.6434C13.3569 13.7836 13.5372 13.7436 13.7174 13.483C13.8777 13.2526 14.068 13.0422 14.2382 12.8217C14.4285 12.5913 14.6588 12.4911 14.9393 12.6213C15.6403 12.942 16.3414 13.2526 17.0124 13.6133C17.1626 13.6935 17.2728 13.974 17.2728 14.1644C17.3028 15.5071 16.2713 16.2987 15.1696 16.3588C13.4871 16.449 12.0249 15.7676 10.6929 14.7957C9.48107 13.9039 8.54967 12.7516 7.79855 11.469C7.25773 10.5572 7.04742 9.5652 7.42799 8.53314C7.83861 7.42091 8.39945 7.21049 9.51111 7.17041C9.7014 7.17041 9.99184 7.41089 10.102 7.61129C10.4125 8.23253 10.6729 8.88384 10.9132 9.53514C10.9733 9.69546 10.9332 9.95598 10.8431 10.1163C10.6729 10.4369 10.4225 10.7175 10.1821 11.0582Z" fill="#414042"/>
+<path style="${this.colorStyle}"  d="M12.1755 4.00401C14.3688 4.00401 16.472 4.93587 17.9542 6.5491C19.4565 8.19239 20.1675 10.3267 19.9672 12.5611C19.6367 16.2084 16.6523 19.2345 13.0168 19.6152C12.7364 19.6453 12.456 19.6553 12.1755 19.6553C10.9237 19.6553 9.72187 19.3647 8.62021 18.8036L7.93919 18.4529L7.19808 18.6533L4.88461 19.2645L5.52557 17.3106L5.80599 16.4689L5.36533 15.6974C4.48401 14.1443 4.16353 12.3607 4.45396 10.5471C4.96473 7.3006 7.58867 4.65531 10.8335 4.12425C11.2742 4.04409 11.7349 4.00401 12.1755 4.00401ZM12.1755 2C11.6247 2 11.0739 2.04008 10.5131 2.14028C6.41691 2.81162 3.12197 6.12826 2.47099 10.2265C2.10043 12.5912 2.57114 14.8257 3.62272 16.6894L2.02031 21.5491C1.94019 21.7796 2.12046 22.01 2.35081 22.01C2.38085 22.01 2.4109 22.01 2.44094 22L7.70885 20.5972C9.05086 21.2786 10.5631 21.6693 12.1755 21.6693C12.5261 21.6693 12.8766 21.6493 13.2271 21.6192C17.824 21.1383 21.5496 17.3607 21.9602 12.7515C22.481 6.8998 17.9041 2 12.1755 2Z" fill="#414042"/>
+</svg>
+`
+  }
+
+  attributeChangedCallback(name: string, _: string, newValue: string) {
+    this._setState();
+  }
+
+  connectedCallback() {
+    this._setState();
+  }
+  
+  disconnectedCallback() {
+    this._setState();
+  }
+
+  _initElement() {
+    this._setState()
+    const size = this.size || 24
+    let contentStyle = `object-fit: content; width: ${size}; height: ${size}`
+    this.contentStyle = contentStyle
+    if (this.color) this.colorStyle = `fill: ${this.color}`
+  }
+
+  _setState() {
+    // @ts-ignore
+    this.props.forEach(key => this[key as keyof typeof IconWhatsapp] = this.getAttribute(key));
+  }
+}
+export default IconWhatsapp
