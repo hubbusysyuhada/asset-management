@@ -3,8 +3,9 @@ import path from 'path'
 import _ from 'lodash'
 
 type AssetType = { class: string; tag: string; html: string }
-type AssetCollectionType = { icons: AssetType[]; illustrations: AssetType[]; specialIcons: AssetType[]; iconIllustrations: AssetType[] }
+type AssetCollectionType = { iconSystem: AssetType[]; illustrationAsset: AssetType[]; iconSpecialCase: AssetType[]; iconIllustration: AssetType[] }
 type ChangeLogType = AssetCollectionType & { version: string }
+type IconType = 'icon-system' | 'illustration-asset' | 'icon-special-case' | 'icon-illustration'
 
 const dirPath = path.join(process.cwd(), 'assets')
 const template = readFileSync(`${dirPath}/single-template.txt`, { encoding: "utf-8" })
@@ -19,14 +20,14 @@ const parseFileContent = (arg: Record<string, string>, template: string) => {
   return template
 }
 
-const updateIndex = (type: string, componentName: string, className: string) => {
+const updateIndex = (type: string, tag: string, className: string) => {
   const filePath = path.join(process.cwd(), `index.ts`)
   let content = readFileSync(filePath, { encoding: "utf-8" })
-  content += `\nwindow.customElements.define("talentics-${type}-${componentName}", require('./${type}/${className}').default)`
+  content += `\nwindow.customElements.define("${tag}", require('./${type}/${className}').default)`
   writeFileSync(filePath, content)
 }
 
-const generateComponents = (type: 'icons' | 'illustrations' | 'special-icons' | 'icon-illustrations') => {
+const generateComponents = (type: IconType) => {
   const illustrationsDirPath = path.join(dirPath, type)
   const dir = readdirSync(illustrationsDirPath)
   const metadata: AssetType[] = []
@@ -36,38 +37,52 @@ const generateComponents = (type: 'icons' | 'illustrations' | 'special-icons' | 
     const COMPONENT_NAME = _.kebabCase(filename)
     const html = readFileSync(`${dirPath}/${type}/${f}`, { encoding: "utf-8" })
     let CONTENT = parseSize(html)
-    if (type === 'icons') CONTENT = parseColor(CONTENT)
+    let VUE_CONTENT = parseSize(html, true)
+    if (type === 'icon-system') {
+      CONTENT = parseColor(CONTENT)
+      VUE_CONTENT = parseColor(VUE_CONTENT, true)
+    }
 
     const file = parseFileContent({ CLASSNAME, COMPONENT_NAME, CONTENT }, template)
-    const vueFile = parseFileContent({ CLASSNAME, COMPONENT_NAME, CONTENT }, vueTemplate)
+    const vueFile = parseFileContent({ CLASSNAME, COMPONENT_NAME, CONTENT: VUE_CONTENT }, vueTemplate)
     writeFileSync(path.join(process.cwd(), type, `${CLASSNAME}.ts`), file)
     writeFileSync(path.join(process.cwd(), 'Vue', type, `${CLASSNAME}.vue`), vueFile)
+    
+    let typeTag = type.split('-').map(v => v[0]).join('')
+    const tag = `talentics-${typeTag}-${COMPONENT_NAME}`
 
-    updateIndex(type, COMPONENT_NAME, CLASSNAME)
-    metadata.push({ class: CLASSNAME, tag: `talentics-${type}-${COMPONENT_NAME}`, html })
+    updateIndex(type, tag, CLASSNAME)
+    metadata.push({ class: CLASSNAME, tag, html })
   })
   return metadata
 }
 
-const parseSize = (content: string) => {
+const parseSize = (content: string, vue = false) => {
   const regex = new RegExp("<svg ", 'g')
-  return content.replace(regex, '<svg style="${this.contentStyle}" ')
+  let replacer = '<svg style="${this.contentStyle}" '
+  if (vue) replacer = '<svg :style="contentStyle" '
+  return content.replace(regex, replacer)
 }
 
-const parseColor = (content: string) => {
-  ['path', 'ellipse'].forEach(v => {
+const parseColor = (content: string, vue = false) => {
+  const fillRegex = new RegExp('fill=\"(.*?)\"', 'g')
+  content = content.replace(fillRegex, '')
+  let replacer = 'style="${this.colorStyle}" '
+  if (vue) replacer = ':style="colorStyle" '
+  const el = ['path', 'ellipse']
+  el.forEach(v => {
     const regex = new RegExp(`<${v}`, 'g')
-    content = content.replace(regex, `<${v} ` + 'style="${this.colorStyle}" ')
+    content = content.replace(regex, `<${v} ` + replacer)
   })
   return content
 }
 
 const generateAllComponents = (): AssetCollectionType => {
-  const icons = generateComponents("icons")
-  const illustrations = generateComponents("illustrations")
-  const specialIcons = generateComponents("special-icons")
-  const iconIllustrations = generateComponents("icon-illustrations")
-  const metadata = { icons, illustrations, specialIcons, iconIllustrations }
+  const iconSystem = generateComponents('icon-system')
+  const illustrationAsset = generateComponents("illustration-asset")
+  const iconSpecialCase = generateComponents("icon-special-case")
+  const iconIllustration = generateComponents("icon-illustration")
+  const metadata = { iconSystem, illustrationAsset, iconSpecialCase, iconIllustration }
   return metadata
 }
 
@@ -78,14 +93,14 @@ const deleteDir = (directory: string) => {
 
 const deleteAll = () => {
   writeFileSync(path.join(process.cwd(), `index.ts`), '')
-  deleteDir('icons')
-  deleteDir('illustrations')
-  deleteDir('special-icons')
-  deleteDir('icon-illustrations')
-  deleteDir('Vue/icons')
-  deleteDir('Vue/illustrations')
-  deleteDir('Vue/special-icons')
-  deleteDir('Vue/icon-illustrations')
+  deleteDir('icon-system')
+  deleteDir('illustration-asset')
+  deleteDir('icon-special-case')
+  deleteDir('icon-illustration')
+  deleteDir('Vue/icon-system')
+  deleteDir('Vue/illustration-asset')
+  deleteDir('Vue/icon-special-case')
+  deleteDir('Vue/icon-illustration')
 }
 
 const updateChangelog = (metadata: AssetCollectionType) => {

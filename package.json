@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "ts-node generator.ts && npx tsup && rm -rf ./dist/icons && rm -rf ./dist/illustrations && rm -rf ./dist/special-icons && rm -rf ./dist/icon-illustrations && cp -r ./Vue/* ./dist/",
+    "build": "ts-node generator.ts && npx tsup && rm -rf ./dist/icon-system && rm -rf ./dist/illustration-asset && rm -rf ./dist/special-case-icons && rm -rf ./dist/icon-illustration && cp -r ./Vue/* ./dist/",
     "publish": "cd ./dist && npm publish && cd ..",
     "build-and-publish": "npm run build && npm run publish"
   },

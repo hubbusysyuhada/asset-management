@@ -1,5 +1,5 @@
 <template>
-  <div v-html="template"></div>
+{{!! CONTENT !!}}
 </template>
 
 <script>
@@ -9,12 +9,11 @@ export default {
     size: {
       Type: Number,
     },
-    color: {}
+    color: {
+      Type: String,
+    }
   },
   computed: {
-    template() {
-      return `{{!! CONTENT !!}}`
-    },
     contentStyle() {
       const size = this.size || 24
       return `width: ${size}px; height: ${size}px`

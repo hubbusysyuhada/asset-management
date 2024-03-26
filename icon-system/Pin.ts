@@ -1,0 +1,43 @@
+class Pin extends HTMLElement {
+  id = "talentics-icon-" + (Math.random() + 1).toString(36).substring(5);
+  props = ['size', 'color']
+  contentStyle = '';
+  colorStyle = '';
+  size = ''
+  color = ''
+  constructor() {
+    super()
+    this._initElement()
+    const shadowRoot = this.attachShadow({mode: 'closed'});
+    shadowRoot.innerHTML = `<svg style="${this.contentStyle}" width="24" height="24" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+<path style="${this.colorStyle}"  fill-rule="evenodd" clip-rule="evenodd" d="M6.00016 6C6.00016 4.34315 7.34331 3 9.00016 3H15.0002C16.657 3 18.0002 4.34315 18.0002 6V12.3543L19.736 14.8616C20.6543 16.188 19.7049 18 18.0916 18H13.0002V21C13.0002 21.5523 12.5524 22 12.0002 22C11.4479 22 11.0002 21.5523 11.0002 21V18H5.90873C4.2954 18 3.34602 16.188 4.26434 14.8616L6.00016 12.3543V6ZM18.0916 16L16.0002 12.979V6C16.0002 5.44772 15.5524 5 15.0002 5H9.00016C8.44787 5 8.00016 5.44772 8.00016 6V12.979L5.90873 16H18.0916Z" />
+</svg>
+`
+  }
+
+  attributeChangedCallback(name: string, _: string, newValue: string) {
+    this._setState();
+  }
+
+  connectedCallback() {
+    this._setState();
+  }
+  
+  disconnectedCallback() {
+    this._setState();
+  }
+
+  _initElement() {
+    this._setState()
+    const size = this.size || 24
+    let contentStyle = `object-fit: content; width: ${size}; height: ${size}`
+    this.contentStyle = contentStyle
+    if (this.color) this.colorStyle = `fill: ${this.color}`
+  }
+
+  _setState() {
+    // @ts-ignore
+    this.props.forEach(key => this[key as keyof typeof Pin] = this.getAttribute(key));
+  }
+}
+export default Pin
